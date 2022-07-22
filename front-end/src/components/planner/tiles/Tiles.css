@@ -1,0 +1,20 @@
+.tiles-container {
+  position: relative;
+}
+
+.rows {
+  height: 1em;
+}
+
+.tile {
+  width: 1em;
+  height: 1em;
+  outline: 1px solid rgba(200, 200, 200, 0.15);
+  display: inline-block;
+  position: relative;
+}
+
+.placed-sprite {
+  position: absolute !important;
+  z-index: -1;
+}

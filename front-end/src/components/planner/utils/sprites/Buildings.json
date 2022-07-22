@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Barn",
+    "width": "7",
+    "height": "4",
+    "imageSource": "https://stardewcommunitywiki.com/mediawiki/images/f/f8/Barn.png"
+  },
+  {
+    "name": "Big-Barn",
+    "width": "7",
+    "height": "4",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/81/Big_Barn.png"
+  },
+  {
+    "name": "Deluxe-Barn",
+    "width": "7",
+    "height": "4",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Deluxe_Barn.png"
+  },
+  {
+    "name": "Coop",
+    "width": "6",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/48/Coop.png"
+  },
+  {
+    "name": "Big-Coop",
+    "width": "6",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d5/Big_Coop.png"
+  },
+  {
+    "name": "Deluxe-Coop",
+    "width": "6",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Deluxe_Coop.png"
+  },
+  {
+    "name": "Fish-Pond",
+    "width": "5",
+    "height": "5",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/65/Fish_Pond.png"
+  },
+  {
+    "name": "Shed",
+    "width": "7",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Shed.png"
+  },
+  {
+    "name": "Big-Shed",
+    "width": "7",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d0/Big_Shed.png"
+  },
+  {
+    "name": "Slime-Hutch",
+    "width": "11",
+    "height": "6",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/22/Slime_Hutch.png"
+  },
+  {
+    "name": "Stone-Cabin",
+    "width": "5",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/aa/Stone_Cabin_Stage_3.png"
+  },
+  {
+    "name": "Plank-Cabin",
+    "width": "5",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/71/Plank_Cabin_Stage_3.png"
+  },
+  {
+    "name": "Log-Cabin",
+    "width": "5",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/13/Log_Cabin_Stage_3.png"
+  },
+  {
+    "name": "Greenhouse",
+    "width": "7",
+    "height": "6",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/93/Greenhouse.png"
+  },
+  {
+    "name": "Well",
+    "width": "3",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/41/Well.png"
+  },
+  {
+    "name": "Stable",
+    "width": "4",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/24/Horse_Stable.png"
+  },
+  {
+    "name": "Mill",
+    "width": "4",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/90/Mill.png"
+  },
+  {
+    "name": "Silo",
+    "width": "3",
+    "height": "3",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5f/Silo.png"
+  },
+  {
+    "name": "Gold-Clock",
+    "width": "3",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b5/Gold_Clock.png"
+  },
+  {
+    "name": "Junimo-Hut",
+    "width": "3",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/73/Junimo_Hut.png"
+  },
+  {
+    "name": "Shipping-Box",
+    "width": "2",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/52/ShippingBox.png"
+  },
+  {
+    "name": "Desert-Obelisk",
+    "width": "3",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/60/Desert_Obelisk.png"
+  },
+  {
+    "name": "Water-Obelisk",
+    "width": "3",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b7/Water_Obelisk.png"
+  },
+  {
+    "name": "Earth-Obelisk",
+    "width": "3",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/thumb/3/3c/Earth_Obelisk.png/100px-Earth_Obelisk.png"
+  },
+  {
+    "name": "Island-Obelisk",
+    "width": "3",
+    "height": "2",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/18/Island_Obelisk.png"
+  }
+]

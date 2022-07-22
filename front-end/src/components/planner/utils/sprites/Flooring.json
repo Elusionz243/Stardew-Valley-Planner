@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Wood-Path",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e3/Wood_Path.png"
+  },
+  {
+    "name": "Stepping-Stone-Path",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Stepping_Stone_Path.png"
+  },
+  {
+    "name": "Gravel-Path",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Gravel_Path.png"
+  },
+  {
+    "name": "Cobblestone-Path",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/90/Cobblestone_Path.png"
+  },
+  {
+    "name": "Crystal-Path",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Crystal_Path.png"
+  },
+  {
+    "name": "Wood-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/58/Wood_Floor.png"
+  },
+  {
+    "name": "Weathered-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2a/Weathered_Floor.png"
+  },
+  {
+    "name": "Straw-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/85/Straw_Floor.png"
+  },
+  {
+    "name": "Stone-Walkway-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Stone_Walkway_Floor.png"
+  },
+  {
+    "name": "Stone-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Stone_Floor.png"
+  },
+  {
+    "name": "Rustic-Plank-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9e/Rustic_Plank_Floor.png"
+  },
+  {
+    "name": "Crystal-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a4/Crystal_Floor.png"
+  },
+  {
+    "name": "Brick-Floor",
+    "width": "1",
+    "height": "1",
+    "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/29/Brick_Floor.png"
+  }
+]
