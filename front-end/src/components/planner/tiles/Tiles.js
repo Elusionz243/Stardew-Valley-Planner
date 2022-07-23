@@ -1,96 +1,155 @@
-import { useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { changeTilePlacement } from "../utils/utils";
 import "./Tiles.css";
 
-const Tiles = ({
-  columns,
-  rows,
-  setTileX,
-  setTileY,
-  selectedSprite,
-  moving,
-  setMoving,
-}) => {
+const Tiles = ({ columns, rows, setTileX, setTileY, selectedSprite }) => {
   const [tiles, setTiles] = useState(
     new Array(rows).fill(0).map((row) => new Array(columns).fill(0))
   );
+  useEffect(() => {
+    const onWindowLoad = () => {
+      const greenhouse = document
+        .getElementById("Greenhouse")
+        .firstChild.cloneNode(true);
+
+      greenhouse.classList.remove("sprite-list-item");
+      greenhouse.classList.add("placed-sprite");
+      const greenhouseX = 26;
+      const greenhouseY = 10;
+      const greenhouseWidth = parseInt(greenhouse.getAttribute("tile-width"));
+      const greenhouseHeight = parseInt(greenhouse.getAttribute("tile-height"));
+
+      greenhouse.style.width = `${greenhouseWidth}em`;
+      const greenhouseTile = document.getElementById(
+        `tile${greenhouseX}-${greenhouseHeight}`
+      );
+      greenhouseTile.appendChild(greenhouse);
+      changeTilePlacement(
+        greenhouseX,
+        greenhouseY,
+        greenhouseWidth,
+        greenhouseHeight
+      );
+
+      const shippingBox = document
+        .getElementById("Shipping_Box")
+        .firstChild.cloneNode(true);
+      shippingBox.classList.remove("sprite-list-item");
+      shippingBox.classList.add("placed-sprite");
+      const shippingBoxX = 71;
+      const shippingBoxY = 14;
+      const shippingBoxWidth = parseInt(shippingBox.getAttribute("tile-width"));
+      const shippingBoxHeight = parseInt(
+        shippingBox.getAttribute("tile-height")
+      );
+      shippingBox.style.bottom = `${
+        parseInt(shippingBox.getAttribute("tile-height")) - 1
+      }em`;
+      const shippingBoxTile = document.getElementById(
+        `tile${shippingBoxX}-${shippingBoxY}`
+      );
+      shippingBox.style.width = `${shippingBoxWidth}em`;
+      shippingBoxTile.appendChild(shippingBox);
+      changeTilePlacement(
+        shippingBoxX,
+        shippingBoxY,
+        shippingBoxWidth,
+        shippingBoxHeight
+      );
+    };
+    onWindowLoad();
+    return;
+  }, []);
 
   const handleMouseClick = ({ target }) => {
-    let x = target.getAttribute("x");
-    let y = target.getAttribute("y");
+    try {
+      let x = target.getAttribute("x");
+      let y = target.getAttribute("y");
 
-    // Verify all tiles have a truthy placeable value.
-    for (let i = 0; i < selectedSprite.height; i++) {
-      for (let n = 0; n < selectedSprite.width; n++) {
-        let element = document.getElementById(
-          `tile${parseInt(x) + n}-${parseInt(y) + i}`
-        );
-        if (element.getAttribute("placeable") === "false") return;
-      }
-    }
-    // change all tiles "placeable" value from thuthy to falsy.
-    for (let i = 0; i < selectedSprite.height; i++) {
-      for (let n = 0; n < selectedSprite.width; n++) {
-        let element = document.getElementById(
-          `tile${parseInt(x) + n}-${parseInt(y) + i}`
-        );
-        if (element.getAttribute("placeable") === "true")
-          element.setAttribute("placeable", "false");
-      }
-    }
-
-    let element = document.getElementById(`tile${parseInt(x)}-${parseInt(y)}`);
-
-    selectedSprite.element.style.width = `${selectedSprite.width}em`;
-    selectedSprite.element.style.bottom = `-${selectedSprite.height - 1}em`;
-    const sprite = selectedSprite.element.cloneNode(true);
-    element.appendChild(sprite);
-
-    const spriteContainer = document.createElement("div");
-    spriteContainer.style.width = `${selectedSprite.width}em`;
-    spriteContainer.style.height = `${selectedSprite.height}em`;
-    element.appendChild(spriteContainer);
-  };
-
-  const handleMouseEnter = ({ target }) => {
-    let x = target.getAttribute("x");
-    let y = target.getAttribute("y");
-
-    console.log(target.getAttribute("placeable"));
-
-    // (X, Y) coords
-    setTileX((prev) => (prev === x ? prev : x));
-    setTileY((prev) => (prev === y ? prev : y));
-
-    if (selectedSprite.id.length) {
+      // Verify all tiles have a truthy placeable value.
       for (let i = 0; i < selectedSprite.height; i++) {
         for (let n = 0; n < selectedSprite.width; n++) {
           let element = document.getElementById(
             `tile${parseInt(x) + n}-${parseInt(y) + i}`
           );
-          element.getAttribute("placeable") === "true"
-            ? (element.style.background = "rgba(0,255,0,0.3)")
-            : (element.style.background = "rgba(255,0,0,0.3)");
+          if (element.getAttribute("placeable") === "false") return;
         }
       }
-      return;
+      // change all tiles "placeable" value from thuthy to falsy.
+      for (let i = 0; i < selectedSprite.height; i++) {
+        for (let n = 0; n < selectedSprite.width; n++) {
+          let element = document.getElementById(
+            `tile${parseInt(x) + n}-${parseInt(y) + i}`
+          );
+          if (element.getAttribute("placeable") === "true")
+            element.setAttribute("placeable", "false");
+        }
+      }
+
+      let element = document.getElementById(
+        `tile${parseInt(x)}-${parseInt(y)}`
+      );
+
+      selectedSprite.element.style.width = `${selectedSprite.width}em`;
+      selectedSprite.element.style.bottom = `-${selectedSprite.height - 1}em`;
+      const sprite = selectedSprite.element.cloneNode(true);
+      element.appendChild(sprite);
+
+      const spriteContainer = document.createElement("div");
+      spriteContainer.style.width = `${selectedSprite.width}em`;
+      spriteContainer.style.height = `${selectedSprite.height}em`;
+      element.appendChild(spriteContainer);
+    } catch (error) {
+      return null;
     }
-    target.style.background = "rgba(255,255,255,0.3)";
+  };
+
+  const handleMouseEnter = ({ target }) => {
+    try {
+      let x = target.getAttribute("x");
+      let y = target.getAttribute("y");
+
+      // (X, Y) coords
+      setTileX((prev) => (prev === x ? prev : x));
+      setTileY((prev) => (prev === y ? prev : y));
+
+      if (selectedSprite.id.length) {
+        for (let i = 0; i < selectedSprite.height; i++) {
+          for (let n = 0; n < selectedSprite.width; n++) {
+            let element = document.getElementById(
+              `tile${parseInt(x) + n}-${parseInt(y) + i}`
+            );
+            element.getAttribute("placeable") === "true"
+              ? (element.style.background = "rgba(0,255,0,0.3)")
+              : (element.style.background = "rgba(255,0,0,0.3)");
+          }
+        }
+        return;
+      }
+      target.style.background = "rgba(255,255,255,0.3)";
+    } catch (error) {
+      return null;
+    }
   };
 
   const handleMouseLeave = ({ target }) => {
-    const x = target.getAttribute("x");
-    const y = target.getAttribute("y");
-    if (selectedSprite.id.length) {
-      for (let i = 0; i < selectedSprite.height; i++) {
-        for (let n = 0; n < selectedSprite.width; n++) {
-          document.getElementById(
-            `tile${parseInt(x) + n}-${parseInt(y) + i}`
-          ).style.background = "none";
+    try {
+      const x = target.getAttribute("x");
+      const y = target.getAttribute("y");
+      if (selectedSprite.id.length) {
+        for (let i = 0; i < selectedSprite.height; i++) {
+          for (let n = 0; n < selectedSprite.width; n++) {
+            document.getElementById(
+              `tile${parseInt(x) + n}-${parseInt(y) + i}`
+            ).style.background = "none";
+          }
         }
+        return;
       }
-      return;
+      target.style.background = "none";
+    } catch (error) {
+      return null;
     }
-    target.style.background = "none";
   };
 
   const unplaceableTiles = (x, y) => {

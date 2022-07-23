@@ -1,15 +1,19 @@
+ul {
+  padding: 0;
+}
+
 .active {
   opacity: 1;
 }
 
 .toolbar-container {
   max-width: fit-content;
+  scroll-behavior: smooth;
 }
 
 .toolbar {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 100%;
 }
 
@@ -27,6 +31,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  height: 2em;
 }
 
 .toolbar-btn:hover {
@@ -35,16 +40,42 @@
 
 .sprites-container {
   height: 100%;
+  overflow-y: scroll;
+  height: 60em;
+}
+
+.sprites-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.sprites-container::-webkit-scrollbar-track {
+  background: rgb(95, 48, 21);
+}
+
+/* Handle */
+.sprites-container::-webkit-scrollbar-thumb {
+  background: rgb(141, 100, 23);
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+.sprites-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(214, 160, 61);
+}
+
+.sprite-category {
+  width: 100%;
+  text-align: center;
 }
 
 .sprite-list {
   list-style: none;
-  /* border: 1px solid aqua; */
+  border-top: 1px solid rgb(95, 48, 21);
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: flex-end;
-  overflow-y: scroll;
-  height: 58em;
 }
 
 .sprite-list-item {
@@ -58,14 +89,15 @@
 
 .list-item {
   width: fit-content;
-  /* border: 1px solid purple; */
   margin: 3px;
 }
 
 .extras {
   display: flex;
-  border: 1px solid black;
-  /* justify-content: space-evenly; */
+  border-top: 1px solid black;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 3em;
 }
 
 .tile-coords {
