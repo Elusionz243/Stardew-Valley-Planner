@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import PlannerToolBar from "./toolbar/PlannerToolBar";
 import Tiles from "./tiles/Tiles";
@@ -25,7 +25,7 @@ const Planner = () => {
   });
 
   const [buildingName, setBuildingName] = useState("");
-  const [toolbarState, setToolbarState] = useState("Buildings");
+  const [toolbarState, setToolbarState] = useState("buildings");
 
   const handleMouseMove = (e) => {
     setMouseX(e.clientX);
@@ -36,6 +36,7 @@ const Planner = () => {
     e.clientX += mouseX;
     e.clientY += mouseY;
   };
+
   return (
     <div className="planner-main-container">
       <div
