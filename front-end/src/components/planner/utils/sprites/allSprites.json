@@ -4,154 +4,154 @@
       "farming": [
         {
           "name": "Barn",
-          "width": "7",
-          "height": "4",
+          "width": 7,
+          "height": 4,
           "imageSource": "https://stardewcommunitywiki.com/mediawiki/images/f/f8/Barn.png"
         },
         {
           "name": "Big_Barn",
-          "width": "7",
-          "height": "4",
+          "width": 7,
+          "height": 4,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/81/Big_Barn.png"
         },
         {
           "name": "Deluxe_Barn",
-          "width": "7",
-          "height": "4",
+          "width": 7,
+          "height": 4,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3d/Deluxe_Barn.png"
         },
         {
           "name": "Coop",
-          "width": "6",
-          "height": "3",
+          "width": 6,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/48/Coop.png"
         },
         {
           "name": "Big_Coop",
-          "width": "6",
-          "height": "3",
+          "width": 6,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d5/Big_Coop.png"
         },
         {
           "name": "Deluxe_Coop",
-          "width": "6",
-          "height": "3",
+          "width": 6,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Deluxe_Coop.png"
         },
         {
           "name": "Greenhouse",
-          "width": "7",
-          "height": "6",
+          "width": 7,
+          "height": 6,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/93/Greenhouse.png"
         },
         {
           "name": "Well",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/41/Well.png"
         },
         {
           "name": "Stable",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/24/Horse_Stable.png"
         },
         {
           "name": "Mill",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/90/Mill.png"
         },
         {
           "name": "Silo",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5f/Silo.png"
         },
         {
           "name": "Fish_Pond",
-          "width": "5",
-          "height": "5",
+          "width": 5,
+          "height": 5,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/65/Fish_Pond.png"
         },
         {
           "name": "Shed",
-          "width": "7",
-          "height": "3",
+          "width": 7,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Shed.png"
         },
         {
           "name": "Big_Shed",
-          "width": "7",
-          "height": "3",
+          "width": 7,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d0/Big_Shed.png"
         },
         {
           "name": "Slime_Hutch",
           "width": "11",
-          "height": "6",
+          "height": 6,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/22/Slime_Hutch.png"
         }
       ],
       "special": [
         {
           "name": "Stone_Cabin",
-          "width": "5",
-          "height": "3",
+          "width": 5,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/aa/Stone_Cabin_Stage_3.png"
         },
         {
           "name": "Plank_Cabin",
-          "width": "5",
-          "height": "3",
+          "width": 5,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/71/Plank_Cabin_Stage_3.png"
         },
         {
           "name": "Log_Cabin",
-          "width": "5",
-          "height": "3",
+          "width": 5,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/13/Log_Cabin_Stage_3.png"
         },
         {
           "name": "Gold_Clock",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b5/Gold_Clock.png"
         },
         {
           "name": "Junimo_Hut",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/73/Junimo_Hut.png"
         },
         {
           "name": "Shipping_Box",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/52/ShippingBox.png"
         },
         {
           "name": "Desert_Obelisk",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/60/Desert_Obelisk.png"
         },
         {
           "name": "Water_Obelisk",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b7/Water_Obelisk.png"
         },
         {
           "name": "Earth_Obelisk",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/thumb/3/3c/Earth_Obelisk.png/100px-Earth_Obelisk.png"
         },
         {
           "name": "Island_Obelisk",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/18/Island_Obelisk.png"
         }
       ]
@@ -160,496 +160,496 @@
       "artisan": [
         {
           "name": "Bee_House",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/ce/Bee_House.png"
         },
         {
           "name": "Cask",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/7c/Cask.png"
         },
         {
           "name": "Cheese_Press",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/79/Cheese_Press.png"
         },
         {
           "name": "Keg",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/7c/Keg.png"
         },
         {
           "name": "Loom",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3b/Loom.png"
         },
         {
           "name": "Mayonnaise_Machine",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ef/Mayonnaise_Machine.png"
         },
         {
           "name": "Oil_Maker",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c5/Oil_Maker.png"
         },
         {
           "name": "Preserves_Jar",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1e/Preserves_Jar.png"
         }
       ],
       "refining": [
         {
           "name": "Bone_Mill",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cc/Bone_Mill.png"
         },
         {
           "name": "Charcoal_Kiln",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9a/Charcoal_Kiln_Off.png"
         },
         {
           "name": "Crystalarium",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/63/Crystalarium.png"
         },
         {
           "name": "Furnace",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0f/Furnace.png"
         },
         {
           "name": "Geode_Crusher",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/02/Geode_Crusher.png"
         },
         {
           "name": "Tapper",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/da/Tapper.png"
         },
         {
           "name": "Heavy_Tapper",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0c/Heavy_Tapper.png"
         },
         {
           "name": "Lightning_Rod",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/62/Lightning_Rod.png"
         },
         {
           "name": "Ostrich_Incubator",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Ostrich_Incubator.png"
         },
         {
           "name": "Recycling_Machine",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/26/Recycling_Machine.png"
         },
         {
           "name": "Seed_Maker",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/19/Seed_Maker.png"
         },
         {
           "name": "Slime_Egg_Press",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/79/Slime_Egg-Press.png"
         },
         {
           "name": "Slime_Incubator",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c0/Slime_Incubator.png"
         },
         {
           "name": "Solar_Panel",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5d/Solar_Panel.png"
         },
         {
           "name": "Wood_Chipper",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6e/Wood_Chipper.png"
         },
         {
           "name": "Worm_Bin",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/71/Worm_Bin.png"
         }
       ],
       "farming": [
         {
           "name": "Sprinkler",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/08/Sprinkler.png"
         },
         {
           "name": "Quality_Sprinkler",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/af/Quality_Sprinkler.png"
         },
         {
           "name": "Iridium_Sprinkler",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/90/Iridium_Sprinkler.png"
         },
         {
           "name": "Scarecrow",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/75/Scarecrow.png"
         },
         {
           "name": "Turnip_Head(Rarecrow_1)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/62/Rarecrow_1.png"
         },
         {
           "name": "Witch(Rarecrow_2)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/28/Rarecrow_2.png"
         },
         {
           "name": "Alien(Rarecrow_3)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ea/Rarecrow_3.png"
         },
         {
           "name": "Snowman(Rarecrow_4)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ef/Rarecrow_4.png"
         },
         {
           "name": "Farmer_Girl(Rarecrow_5)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9f/Rarecrow_5.png"
         },
         {
           "name": "Dwarf(Rarecrow_6)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/29/Rarecrow_6.png"
         },
         {
           "name": "Raccoon(Rarecrow_7)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/52/Rarecrow_7.png"
         },
         {
           "name": "Tiki_Mask(Rarecrow_8)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/bb/Rarecrow_8.png"
         },
         {
           "name": "Deluxe Scarecrow",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/59/Deluxe_Scarecrow.png"
         },
         {
           "name": "Garden_Pot",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2c/Garden_Pot.png"
         }
       ],
       "fishing": [
         {
           "name": "Crab_Pot",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/92/Crab_Pot.png"
         }
       ],
       "fences": [
         {
           "name": "Gate",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/94/Gate.png"
         },
         {
           "name": "Wood_Fence",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1e/Wood_Fence.png"
         },
         {
           "name": "Hardwood_Fence",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5c/Hardwood_Fence.png"
         },
         {
           "name": "Stone_Fence",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2d/Stone_Fence.png"
         },
         {
           "name": "Iron_Fence",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9d/Iron_Fence.png"
         }
       ],
       "storage": [
         {
           "name": "Chest",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b3/Chest.png"
         },
         {
           "name": "Chest(Blue)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ac/ChestBlue.png"
         },
         {
           "name": "Chest(Light_Blue)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/60/ChestLightBlue.png"
         },
         {
           "name": "Chest(Teal)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ad/ChestTeal.png"
         },
         {
           "name": "Chest(Aqua)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/75/ChestAqua.png"
         },
         {
           "name": "Chest(Green)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1b/ChestGreen.png"
         },
         {
           "name": "Chest(Lime_Green)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a4/ChestLimeGreen.png"
         },
         {
           "name": "Chest(Yellow)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d6/ChestYellow.png"
         },
         {
           "name": "Chest(Light_Orange)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d9/ChestLightOrange.png"
         },
         {
           "name": "Chest(Orange)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cc/ChestOrange.png"
         },
         {
           "name": "Chest(Red)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ef/ChestRed.png"
         },
         {
           "name": "Chest(Dark_Red)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/36/ChestDarkRed.png"
         },
         {
           "name": "Chest(Light_Pink)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5a/ChestLightPink.png"
         },
         {
           "name": "Chest(Pink)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/da/ChestPink.png"
         },
         {
           "name": "Chest(Magenta)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d6/ChestMagenta.png"
         },
         {
           "name": "Chest(Purple)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/40/ChestPurple.png"
         },
         {
           "name": "Chest(Dark_Purple)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c7/ChestDarkPurple.png"
         },
         {
           "name": "Chest(Dark_Grey)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/17/ChestDarkGrey.png"
         },
         {
           "name": "Chest(Medium_Grey)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e3/ChestMediumGrey.png"
         },
         {
           "name": "Chest(Light_Grey)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/56/ChestLightGrey.png"
         },
         {
           "name": "Chest(White)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/44/ChestWhite.png"
         },
         {
           "name": "Junimo_Chest",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/bc/Junimo_Chest.png"
         },
         {
           "name": "Stone_Chest",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Stone_Chest.png"
         }
       ],
       "signs": [
         {
           "name": "Wood_Sign",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/ce/Wood_Sign.png"
         },
         {
           "name": "Stone_Sign",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f3/Stone_Sign.png"
         },
         {
           "name": "Dark_Sign",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/72/Dark_Sign.png"
         }
       ],
       "misc": [
         {
           "name": "Deconstructor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/22/Deconstructor.png"
         },
         {
           "name": "Farm_Computer",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Farm_Computer.png"
         },
         {
           "name": "Hopper",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/81/Hopper.png"
         },
         {
           "name": "Mini_Jukebox",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e4/Mini-Jukebox_Off.png"
         },
         {
           "name": "Workbench",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ea/Workbench.png"
         },
         {
           "name": "Mini_Fridge",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/4d/Mini-Fridge.png"
         },
         {
           "name": "Coffee_Maker",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5a/Coffee_Maker.png"
         },
         {
           "name": "Telephone",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9e/Telephone.png"
         },
         {
           "name": "Sewing_Machine",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e0/Sewing_Machine.png"
         },
         {
           "name": "Mini_Shipping_Box",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1c/Mini-Shipping_Bin.png"
         }
       ]
@@ -658,1528 +658,1528 @@
       "chairs": [
         {
           "name": "Birch_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0a/Birch_Chair.png"
         },
         {
           "name": "Blue_Diner_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/08/Blue_Diner_Chair.png"
         },
         {
           "name": "Blue_Stool",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/32/Blue_Stool.png"
         },
         {
           "name": "Breakfast_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b6/Breakfast_Chair.png"
         },
         {
           "name": "Country_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Country_Chair.png"
         },
         {
           "name": "Crystal_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/10/Crystal_Chair.png"
         },
         {
           "name": "Cute_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/bf/Cute_Chair.png"
         },
         {
           "name": "Dark_Throne",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/40/Dark_Throne.png"
         },
         {
           "name": "Dining_Chair(red)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/22/Dining_Chair_%28red%29.png"
         },
         {
           "name": "Dining_Chair(yellow)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/4c/Dining_Chair_%28yellow%29.png"
         },
         {
           "name": "Green_Office_Stool",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/4b/Green_Office_Stool.png"
         },
         {
           "name": "Green_Plush_Seat",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1e/Green_Plush_Seat.png"
         },
         {
           "name": "Green_Stool",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/97/Green_Stool.png"
         },
         {
           "name": "Groovy_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d1/Groovy_Chair.png"
         },
         {
           "name": "King_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/43/King_Chair.png"
         },
         {
           "name": "Mahogany_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ea/Mahogany_Chair.png"
         },
         {
           "name": "Metal_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ae/Metal_Chair.png"
         },
         {
           "name": "Oak_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2a/Oak_Chair.png"
         },
         {
           "name": "Orange_Office_Stool",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Orange_Office_Stool.png"
         },
         {
           "name": "Pink_Office_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e7/Pink_Office_Chair.png"
         },
         {
           "name": "Pink_Plush_Seat",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cf/Pink_Plush_Seat.png"
         },
         {
           "name": "Purple_Office_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/56/Purple_Office_Chair.png"
         },
         {
           "name": "Red_Diner_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/dd/Red_Diner_Chair.png"
         },
         {
           "name": "Stump_Seat",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/49/Stump_Seat.png"
         },
         {
           "name": "Tropical_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e0/Tropical_Chair.png"
         },
         {
           "name": "Walnut_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3f/Walnut_Chair.png"
         },
         {
           "name": "Winter_Chair",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/bf/Winter_Chair.png"
         }
       ],
       "benches": [
         {
           "name": "Birch_Bench",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/29/Birch_Bench.png"
         },
         {
           "name": "Mahogany_Bench",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cb/Mahogany_Bench.png"
         },
         {
           "name": "Modern_Bench",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Modern_Bench.png"
         },
         {
           "name": "Oak_Bench",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a3/Oak_Bench.png"
         },
         {
           "name": "Walnut_Bench",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Walnut_Bench.png"
         }
       ],
       "armchairs": [
         {
           "name": "Blue_Armchair",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/69/Blue_Armchair.png"
         },
         {
           "name": "Brown_Armchair",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cf/Brown_Armchair.png"
         },
         {
           "name": "Green_Armchair",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/47/Green_Armchair.png"
         },
         {
           "name": "Red_Armchair",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c7/Red_Armchair.png"
         },
         {
           "name": "Yellow_Armchair",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/96/Yellow_Armchair.png"
         }
       ],
       "couches": [
         {
           "name": "Blue_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/21/Blue_Couch.png"
         },
         {
           "name": "Brown_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a6/Brown_Couch.png"
         },
         {
           "name": "Dark_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ad/Dark_Couch.png"
         },
         {
           "name": "Green_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/55/Green_Couch.png"
         },
         {
           "name": "Large_Brown_Couch",
-          "width": "3",
-          "height": "1",
+          "width": 3,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/50/Large_Brown_Couch.png"
         },
         {
           "name": "Red_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ea/Red_Couch.png"
         },
         {
           "name": "Wizard_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/22/Wizard_Couch.png"
         },
         {
           "name": "Woodsy_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/67/Woodsy_Couch.png"
         },
         {
           "name": "Yellow_Couch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d4/Yellow_Couch.png"
         }
       ],
       "tables": [
         {
           "name": "Birch_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/95/Birch_Table.png"
         },
         {
           "name": "Candy_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/ce/Candy_Table.png"
         },
         {
           "name": "Coffee_Table",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d6/Coffee_Table.png"
         },
         {
           "name": "Dark_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6d/Dark_Table.png"
         },
         {
           "name": "Diviner_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/53/Diviner_Table.png"
         },
         {
           "name": "Luau_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/55/Luau_Table.png"
         },
         {
           "name": "Luxury_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0d/Luxury_Table.png"
         },
         {
           "name": "Mahogany_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9c/Mahogany_Table.png"
         },
         {
           "name": "Modern_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/72/Modern_Table.png"
         },
         {
           "name": "Moon_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/df/Moon_Table.png"
         },
         {
           "name": "Neolithic_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/dd/Neolithic_Table.png"
         },
         {
           "name": "Oak_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Oak_Table.png"
         },
         {
           "name": "Pub_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/34/Pub_Table.png"
         },
         {
           "name": "Puzzle_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e1/Puzzle_Table.png"
         },
         {
           "name": "Stone_Slab",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0e/Stone_Slab.png"
         },
         {
           "name": "Sun_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/84/Sun_Table.png"
         },
         {
           "name": "Walnut_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6f/Walnut_Table.png"
         },
         {
           "name": "Winter_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f6/Winter_Table.png"
         }
       ],
       "tea_tables": [
         {
           "name": "Birch_Tea_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ed/Birch_Tea-Table.png"
         },
         {
           "name": "Mahogany_Tea_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e2/Mahogany_Tea-Table.png"
         },
         {
           "name": "Modern_Tea_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/68/Modern_Tea-Table.png"
         },
         {
           "name": "Oak_Tea_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/19/Oak_Tea-Table.png"
         },
         {
           "name": "Walnut_Tea_Table",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/56/Walnut_Tea-Table.png"
         }
       ],
       "end_tables": [
         {
           "name": "Birch_End_Table",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6a/Birch_End_Table.png"
         },
         {
           "name": "Grandmother_End_Table",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/78/Grandmother_End_Table.png"
         },
         {
           "name": "Mahogany_End_Table",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/63/Mahogany_End_Table.png"
         },
         {
           "name": "Modern_End_Table",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/94/Modern_End_Table.png"
         },
         {
           "name": "Oak_End_Table",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Oak_End_Table.png"
         },
         {
           "name": "Walnut_End_Table",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5a/Walnut_End_Table.png"
         },
         {
           "name": "Winter_End_Table",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/17/Winter_End_Table.png"
         }
       ],
       "long_tables": [
         {
           "name": "Festive_Dining_Table",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Festive_Dining_Table.png"
         },
         {
           "name": "Mahogany_Dining_Table",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1c/Mahogany_Dining_Table.png"
         },
         {
           "name": "Modern_Dining_Table",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Modern_Dining_Table.png"
         },
         {
           "name": "Winter_Dining_Table",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/de/Winter_Dining_Table.png"
         }
       ],
       "bookcases": [
         {
           "name": "Artist_Bookcase",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d2/Artist_Bookcase.png"
         },
         {
           "name": "Dark_Bookcase",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cd/Dark_Bookcase.png"
         },
         {
           "name": "Luxury_Bookcase",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/25/Luxury_Bookcase.png"
         },
         {
           "name": "Modern_Bookcase",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/88/Modern_Bookcase.png"
         }
       ],
       "dressers": [
         {
           "name": "Birch_Dresser",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/18/Birch_Dresser.png"
         },
         {
           "name": "Mahogany_Dresser",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/00/Mahogany_Dresser.png"
         },
         {
           "name": "Oak_Dresser",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/37/Oak_Dresser.png"
         },
         {
           "name": "Walnut_Dresser",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/be/Walnut_Dresser.png"
         }
       ],
       "fireplaces": [
         {
           "name": "Brick_Fireplace",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/97/Brick_Fireplace.png"
         },
         {
           "name": "Elegant_Fireplace",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/94/Elegant_Fireplace.png"
         },
         {
           "name": "Iridium_Fireplace",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/35/Iridium_Fireplace.png"
         },
         {
           "name": "Monster_Fireplace",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9c/Monster_Fireplace.png"
         },
         {
           "name": "Stone_Fireplace",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c2/Stone_Fireplace.png"
         },
         {
           "name": "Stove_Fireplace",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/66/Stove_Fireplace.png"
         }
       ],
       "lamps": [
         {
           "name": "Box_Lamp",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ed/Box_Lamp.png"
         },
         {
           "name": "Candle_Lamp",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f4/Candle_Lamp.png"
         },
         {
           "name": "Classic_Lamp",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/20/Classic_Lamp.png"
         },
         {
           "name": "Country_Lamp",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/fd/Country_Lamp.png"
         },
         {
           "name": "Modern_Lamp",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/04/Modern_Lamp.png"
         },
         {
           "name": "Ornate_Lamp",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/7d/Ornate_Lamp.png"
         },
         {
           "name": "Wall_Sconce",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/85/Wall_Sconce_6.png"
         }
       ],
       "windows": [
         {
           "name": "Basic_Window",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Basic_Window.png"
         },
         {
           "name": "Boarded_Window",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/92/Boarded_Window.png"
         },
         {
           "name": "Carved_Window",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1c/Carved_Window.png"
         },
         {
           "name": "Metal_Window",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/11/Metal_Window.png"
         },
         {
           "name": "Ornate_Window",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/46/Ornate_Window.png"
         },
         {
           "name": "Porthole",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f7/Porthole.png"
         },
         {
           "name": "Small_Window",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3b/Small_Window.png"
         }
       ],
       "rugs": [
         {
           "name": "Bamboo_Mat",
-          "width": "3",
-          "height": "1",
+          "width": 3,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2d/Bamboo_Mat.png"
         },
         {
           "name": "Blossom_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/67/Blossom_Rug.png"
         },
         {
           "name": "Bone_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f5/Bone_Rug.png"
         },
         {
           "name": "Burlap_Rug",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/49/Burlap_Rug.png"
         },
         {
           "name": "Dark_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e8/Dark_Rug.png"
         },
         {
           "name": "Floor_Divider",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2c/Floor_Divider_L_1.png"
         },
         {
           "name": "Fruit_Salad_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/7c/Fruit_Salad_Rug.png"
         },
         {
           "name": "Funky_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/63/Funky_Rug.png"
         },
         {
           "name": "Green_Cottage_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/58/Green_Cottage_Rug.png"
         },
         {
           "name": "Icy_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/68/Icy_Rug.png"
         },
         {
           "name": "Large_Cottage_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/7c/Large_Cottage_Rug.png"
         },
         {
           "name": "Large_Green_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/73/Large_Green_Rug.png"
         },
         {
           "name": "Large_Red_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Large_Red_Rug.png"
         },
         {
           "name": "Light_Green_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ec/Light_Green_Rug.png"
         },
         {
           "name": "Modern_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/97/Modern_Rug.png"
         },
         {
           "name": "Monster_Rug",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/74/Monster_Rug.png"
         },
         {
           "name": "Mystic_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/bb/Mystic_Rug.png"
         },
         {
           "name": "Nautical_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f1/Nautical_Rug.png"
         },
         {
           "name": "Oceanic_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f2/Oceanic_Rug.png"
         },
         {
           "name": "Old_World_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a3/Old_World_Rug.png"
         },
         {
           "name": "Patchwork_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b3/Patchwork_Rug.png"
         },
         {
           "name": "Pirate_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ad/Pirate_Rug.png"
         },
         {
           "name": "Red_Cottage_Rug",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Red_Cottage_Rug.png"
         },
         {
           "name": "Red_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/91/Red_Rug.png"
         },
         {
           "name": "Snowy_Rug",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/48/Snowy_Rug.png"
         },
         {
           "name": "Woodcut_Rug",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/12/Woodcut_Rug.png"
         }
       ],
       "tvs": [
         {
           "name": "Budget_TV",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f9/Budget_TV.png"
         },
         {
           "name": "Floor_TV",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/20/Floor_TV.png"
         },
         {
           "name": "Plasma_TV",
-          "width": "4",
-          "height": "1",
+          "width": 4,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/be/Plasma_TV.png"
         },
         {
           "name": "Tropical_TV",
-          "width": "4",
-          "height": "1",
+          "width": 4,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/00/Tropical_TV.png"
         }
       ],
       "beds": [
         {
           "name": "Birch_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/33/Birch_Double_Bed.png"
         },
         {
           "name": "Single_Bed",
-          "width": "2",
-          "height": "3",
+          "width": 2,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/25/Single_Bed.png"
         },
         {
           "name": "Deluxe_Red_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6f/Deluxe_Red_Double_Bed.png"
         },
         {
           "name": "Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/ba/Double_Bed.png"
         },
         {
           "name": "Exotic_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e8/Exotic_Double_Bed.png"
         },
         {
           "name": "Fisher_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e4/Fisher_Double_Bed.png"
         },
         {
           "name": "Modern_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/8d/Modern_Double_Bed.png"
         },
         {
           "name": "Pirate_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ac/Pirate_Double_Bed.png"
         },
         {
           "name": "Single_Bed",
-          "width": "2",
-          "height": "3",
+          "width": 2,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/25/Single_Bed.png"
         },
         {
           "name": "Starry_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a6/Starry_Double_Bed.png"
         },
         {
           "name": "Strawberry_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/35/Strawberry_Double_Bed.png"
         },
         {
           "name": "Tropical_Bed",
-          "width": "2",
-          "height": "3",
+          "width": 2,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Tropical_Bed.png"
         },
         {
           "name": "Tropical_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c6/Tropical_Double_Bed.png"
         },
         {
           "name": "Wild_Double_Bed",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/40/Wild_Double_Bed.png"
         }
       ],
       "decorative_plants": [
         {
           "name": "Bonsai_Tree",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b4/Bonsai_Tree.png"
         },
         {
           "name": "Deluxe_Tree",
-          "width": "3",
-          "height": "1",
+          "width": 3,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/58/Deluxe_Tree.png"
         },
         {
           "name": "Dried_Sunflowers",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/af/Dried_Sunflowers.png"
         },
         {
           "name": "Exotic_Tree",
-          "width": "3",
-          "height": "1",
+          "width": 3,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/11/Exotic_Tree.png"
         },
         {
           "name": "House_Plant",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6e/House_Plant.png"
         },
         {
           "name": "Indoor_Palm",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Indoor_Palm.png"
         },
         {
           "name": "Long_Cactus",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/27/Long_Cactus.png"
         },
         {
           "name": "Long_Palm",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Long_Palm.png"
         },
         {
           "name": "Manicured_Pine",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a2/Manicured_Pine.png"
         },
         {
           "name": "S._Pine",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b2/S._Pine.png"
         },
         {
           "name": "Small_Plant",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f3/Small_Plant.png"
         },
         {
           "name": "Table_Plant",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/43/Table_Plant.png"
         },
         {
           "name": "Topiary_Tree",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/31/Topiary_Tree.png"
         },
         {
           "name": "Tree_Column",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9a/Tree_Column.png"
         },
         {
           "name": "Tree_of_the_Winter_Star",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cc/Tree_of_the_Winter_Star.png"
         }
       ],
       "decorative_hanging_plants": [
         {
           "name": "Ceiling_Leaves_1",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/da/Ceiling_Leaves_1.png"
         },
         {
           "name": "Indoor_Hanging_Basket",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c1/Indoor_Hanging_Basket.png"
         },
         {
           "name": "Jungle_Decal_1",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/70/Jungle_Decal_1.png"
         },
         {
           "name": "L._Light_String",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/61/L._Light_String.png"
         },
         {
           "name": "Palm_Wall_Ornament",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Palm_Wall_Ornament.png"
         },
         {
           "name": "Sunflower_Wall_Flower",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/65/S._Wall_Flower.png"
         },
         {
           "name": "Wall_Basket",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Wall_Basket.png"
         },
         {
           "name": "Wall_Cactus",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/44/Wall_Cactus.png"
         },
         {
           "name": "Wall_Flower",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b8/Wall_Flower.png"
         },
         {
           "name": "Wall_Palm",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0b/Wall_Palm.png"
         }
       ],
       "paintings": [
         {
           "name": "'A_Night_On_Eco_Hill'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/83/%27A_Night_On_Eco-Hill%27.png"
         },
         {
           "name": "'Blue_City'",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b7/%27Blue_City%27.png"
         },
         {
           "name": "'Blueberries'",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/54/%27Blueberries%27.png"
         },
         {
           "name": "'Boat'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/07/%27Boat%27.png"
         },
         {
           "name": "'Burnt_Offering'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e5/%27Burnt_Offering%27.png"
         },
         {
           "name": "Calico_Falls",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ac/Calico_Falls.png"
         },
         {
           "name": "Colorful_Set",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Colorful_Set.png"
         },
         {
           "name": "'Dancing_Grass'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5b/%27Dancing_Grass%27.png"
         },
         {
           "name": "Foliage_Print",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b7/Foliage_Print.png"
         },
         {
           "name": "'Frozen_Dreams'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d3/%27Frozen_Dreams%27.png"
         },
         {
           "name": "'Highway_89'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f1/%27Highway_89%27.png"
         },
         {
           "name": "'Jade_Hills'",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/44/%27Jade_Hills%27.png"
         },
         {
           "name": "'Jade_Hills_Extended'",
-          "width": "5",
-          "height": "2",
+          "width": 5,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/49/%27Jade_Hills_Extended%27.png"
         },
         {
           "name": "Kitemaster_'95'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/61/%27Kitemaster_%2795%27.png"
         },
         {
           "name": "'Little_Tree'",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/89/%27Little_Tree%27.png"
         },
         {
           "name": "My_First_Painting",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b3/My_First_Painting.png"
         },
         {
           "name": "Needlepoint_Flower",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/82/Needlepoint_Flower.png"
         },
         {
           "name": "'Pathways'",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3d/%27Pathways%27.png"
         },
         {
           "name": "'Physics_101'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c3/%27Physics_101%27.png"
         },
         {
           "name": "Primal_Motion",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/25/%27Primal_Motion%27.png"
         },
         {
           "name": "'Queen_of_the_Gem_Sea'",
-          "width": "4",
-          "height": "2",
+          "width": 4,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f0/%27Queen_of_the_Gem_Sea%27.png"
         },
         {
           "name": "'Spires'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0b/%27Spires%27.png"
         },
         {
           "name": "'Sun_#44'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d7/%27Sun_44%27.png"
         },
         {
           "name": "'Sun_45'",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b2/%27Sun_45%27.png"
         },
         {
           "name": "'The_Muzzamaroo'",
-          "width": "4",
-          "height": "3",
+          "width": 4,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a0/%27The_Muzzamaroo%27.png"
         },
         {
           "name": "'Vanilla_Villa'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/64/%27Vanilla_Villa%27.png"
         },
         {
           "name": "'VGA_Paradise'",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/23/%27VGA_Paradise%27.png"
         },
         {
           "name": "Vista",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/de/%27Vista%27.png"
         },
         {
           "name": "'Volcano'_Photo",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/46/%27Volcano%27_Photo.png"
         }
       ],
       "lupini_paintings": [
         {
           "name": "'1000_Years_From_Now'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/12/%271000_Years_From_Now%27.png"
         },
         {
           "name": "'Clouds'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/60/%27Clouds%27.png"
         },
         {
           "name": "'Land_Of_Clay'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9f/%27Land_Of_Clay%27.png"
         },
         {
           "name": "'Portrait_Of_A_Mermaid'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/49/%27Portrait_Of_A_Mermaid%27.png"
         },
         {
           "name": "'Red_Eagle'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9f/%27Red_Eagle%27.png"
         },
         {
           "name": "'Solar_Kingdom'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ed/%27Solar_Kingdom%27.png"
         },
         {
           "name": "'The_Serpent'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ae/%27The_Serpent%27.png"
         },
         {
           "name": "'Three_Trees'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/ad/%27Three_Trees%27.png"
         },
         {
           "name": "'Tropical_Fish_#173'",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/78/%27Tropical_Fish_173%27.png"
         }
       ],
       "movie_posters": [
         {
           "name": "'It_Howls_In_The_Rain'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b9/%27It_Howls_In_The_Rain%27.png"
         },
         {
           "name": "'Journey_Of_The_Prairie_King_The_Motion_Picture'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ee/%27Journey_Of_The_Prairie_King_The_Motion_Picture%27.png"
         },
         {
           "name": "'Mysterium'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/03/%27Mysterium%27.png"
         },
         {
           "name": "'Natural_Wonders_Exploring_Our_Vibrant_World'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d5/%27Natural_Wonders_Exploring_Our_Vibrant_World%27.png"
         },
         {
           "name": "'The_Brave_Little_Sapling'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/93/%27The_Brave_Little_Sapling%27.png"
         },
         {
           "name": "'The_Miracle_At_Coldstar_Ranch'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ec/%27The_Miracle_At_Coldstar_Ranch%27.png"
         },
         {
           "name": "'The_Zuzu_City_Express'",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/db/%27The_Zuzu_City_Express%27.png"
         },
         {
           "name": "Wumbus",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d9/%27Wumbus%27.png"
         }
       ],
       "banners": [
         {
           "name": "Clouds_Banner",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/29/Clouds_Banner.png"
         },
         {
           "name": "Icy_Banner",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/ba/Icy_Banner.png"
         },
         {
           "name": "Moonlight_Jellies_Banner",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e3/Moonlight_Jellies_Banner.png"
         },
         {
           "name": "Pastel_Banner",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6c/Pastel_Banner.png"
         },
         {
           "name": "Winter_Banner",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f2/Winter_Banner.png"
         }
       ],
       "wall_hangings": [
         {
           "name": "Anchor_(Furniture)",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/fc/Anchor_%28Furniture%29.png"
         },
         {
           "name": "Calendar",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Calendar.png"
         },
         {
           "name": "Ceiling_Flags",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a6/Ceiling_Flags.png"
         },
         {
           "name": "Cloud_Decal_1",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2b/Cloud_Decal_1.png"
         },
         {
           "name": "Decorative_Axe",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cb/Decorative_Axe.png"
         },
         {
           "name": "Decorative_Pitchfork",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/73/Decorative_Pitchfork.png"
         },
         {
           "name": "Hanging_Shield",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a7/Hanging_Shield.png"
         },
         {
           "name": "Joja_Cola_Light",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/cf/J._Cola_Light.png"
         },
         {
           "name": "Lifesaver",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e4/Lifesaver.png"
         },
         {
           "name": "Little_Photos",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/08/Little_Photos.png"
         },
         {
           "name": "Log_Panel_1",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f3/Log_Panel_1.png"
         },
         {
           "name": "Miner's_Crest",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/03/Miner%27s_Crest.png"
         },
         {
           "name": "Monster_Danglers",
-          "width": "3",
-          "height": "1",
+          "width": 3,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e0/Monster_Danglers.png"
         },
         {
           "name": "Night_Sky_Decal_1",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/34/Night_Sky_Decal_1.png"
         },
         {
           "name": "Night_Sky_Decal_2",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/01/Night_Sky_Decal_2.png"
         },
         {
           "name": "Night_Sky_Decal_3",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f4/Night_Sky_Decal_3.png"
         },
         {
           "name": "Pirate_Flag",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/19/Pirate_Flag.png"
         },
         {
           "name": "Pyramid_Decal",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/58/Pyramid_Decal.png"
         },
         {
           "name": "Skull_Poster",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b1/Skull_Poster.png"
         },
         {
@@ -2190,514 +2190,514 @@
         },
         {
           "name": "Starport_Decal",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a9/Starport_Decal.png"
         },
         {
           "name": "Strawberry_Decal",
-          "width": "2",
-          "height": "2",
+          "width": 2,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/42/Strawberry_Decal.png"
         },
         {
           "name": "Wall_Pumpkin",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/ed/Wall_Pumpkin.png"
         },
         {
           "name": "Wallflower_Pal",
-          "width": "3",
-          "height": "3",
+          "width": 3,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/22/Wallflower_Pal.png"
         },
         {
           "name": "Winter_Tree_Decal",
-          "width": "1",
-          "height": "2",
+          "width": 1,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/60/Winter_Tree_Decal.png"
         },
         {
           "name": "Wood_Panel",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/02/Wood_Panel.png"
         },
         {
           "name": "World_Map",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/76/World_Map.png"
         }
       ],
       "fish_tanks": [
         {
           "name": "Aquatic_Sanctuary",
-          "width": "7",
-          "height": "1",
+          "width": 7,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/14/Aquatic_Sanctuary.png"
         },
         {
           "name": "Deluxe_Fish_Tank",
-          "width": "5",
-          "height": "1",
+          "width": 5,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/46/Deluxe_Fish_Tank.png"
         },
         {
           "name": "Large_Fish_Tank",
-          "width": "4",
-          "height": "1",
+          "width": 4,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/94/Large_Fish_Tank.png"
         },
         {
           "name": "Modern_Fish_Tank",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1a/Modern_Fish_Tank.png"
         },
         {
           "name": "Small_Fish_Tank",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/79/Small_Fish_Tank.png"
         }
       ],
       "torches": [
         {
           "name": "Plain_Torch",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e2/Plain_Torch.png"
         },
         {
           "name": "Stump_Torch",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b1/Stump_Torch.png"
         },
         {
           "name": "Jungle_Torch",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Jungle_Torch.png"
         }
       ],
       "statues": [
         {
           "name": "Bear_Statue",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/43/Bear_Statue.png"
         },
         {
           "name": "Bobo_Statue",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e9/Bobo_Statue.png"
         },
         {
           "name": "Chicken_Statue_(furniture)",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f9/Chicken_Statue_%28furniture%29.png"
         },
         {
           "name": "Gourmand_Statue",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d6/Gourmand_Statue.png"
         },
         {
           "name": "Green_Serpent_Statue",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/65/Green_Serpent_Statue.png"
         },
         {
           "name": "Iridium_Krobus",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6a/Iridium_Krobus.png"
         },
         {
           "name": "Leah's_Sculpture",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/49/Leah%27s_Sculpture.png"
         },
         {
           "name": "Large_Futan_Bear",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/54/Lg._Futan_Bear.png"
         },
         {
           "name": "Obsidian_Vase",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b8/Obsidian_Vase.png"
         },
         {
           "name": "Purple_Serpent_Statue",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/69/Purple_Serpent_Statue.png"
         },
         {
           "name": "Sam's_Boombox",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f2/Sam%27s_Boombox.png"
         },
         {
           "name": "Singing_Stone",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/5a/Singing_Stone.png"
         },
         {
           "name": "Skeleton_Statue",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/7d/Skeleton_Statue.png"
         },
         {
           "name": "Sloth_Skeleton_Left",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6e/Sloth_Skeleton_L.png"
         },
         {
           "name": "Sloth_Skeleton_Middle",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/be/Sloth_Skeleton_M.png"
         },
         {
           "name": "Sloth_Skeleton_Right",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e7/Sloth_Skeleton_R.png"
         },
         {
           "name": "Small_Junimo_Plushes",
-          "width": "4",
-          "height": "1",
+          "width": 4,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/85/Small_Junimo_Plush.png"
         },
         {
           "name": "Squirrel_Figurine",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/66/Squirrel_Figurine.png"
         },
         {
           "name": "Standing_Geode",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b0/Standing_Geode.png"
         },
         {
           "name": "Wumbus_Statue",
-          "width": "3",
-          "height": "2",
+          "width": 3,
+          "height": 2,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/65/Wumbus_Statue.png"
         },
         {
           "name": "??Foroguemon??",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/59/%3F%3FForoguemon%3F%3F.png"
         },
         {
           "name": "??HMTGF??",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/8b/%3F%3FHMTGF%3F%3F.png"
         },
         {
           "name": "??Pinky_Lemon??",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/37/%3F%3FPinky_Lemon%3F%3F.png"
         },
         {
           "name": "Stone_Owl",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/46/Stone_Owl_Random.png"
         },
         {
           "name": "Solid_Gold_Lewis",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/80/Solid_Gold_Lewis.png"
         },
         {
           "name": "Statue_Of_Endless_Fortune",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/00/Statue_Of_Endless_Fortune.png"
         },
         {
           "name": "Statue_Of_Perfection",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/b2/Statue_Of_Perfection.png"
         },
         {
           "name": "Statue_Of_True_Perfection",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/db/Statue_Of_True_Perfection.png"
         },
         {
           "name": "Stone_Frog",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c3/Stone_Frog.png"
         },
         {
           "name": "Stone_Junimo",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/31/Stone_Junimo.png"
         },
         {
           "name": "Stone_Parrot",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a2/Stone_Parrot.png"
         },
         {
           "name": "Suit_Of_Armor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/54/Suit_Of_Armor.png"
         },
         {
           "name": "Wicked_Statue",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/4a/Wicked_Statue.png"
         },
         {
           "name": "Sign_Of_The_Vessel",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1f/Sign_Of_The_Vessel.png"
         }
       ],
       "misc": [
         {
           "name": "Butterfly_Hutch",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1f/Butterfly_Hutch.png"
         },
         {
           "name": "Futan_Rabbit",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/56/Futan_Rabbit.png"
         },
         {
           "name": "Futan_Bear",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/10/Futan_Bear.png"
         },
         {
           "name": "Junimo_Plush",
-          "width": "2",
-          "height": "1",
+          "width": 2,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/00/Junimo_Plush.png"
         },
         {
           "name": "Ceramic_Pillar",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/47/Ceramic_Pillar.png"
         },
         {
           "name": "Gold_Pillar",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/6a/Gold_Pillar.png"
         },
         {
           "name": "China_Cabinet",
-          "width": "3",
-          "height": "1",
+          "width": 3,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/64/China_Cabinet.png"
         },
         {
           "name": "Decorative_Bowl",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/0a/Decorative_Bowl.png"
         },
         {
           "name": "Decorative_Lantern",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/34/Decorative_Lantern.png"
         },
         {
           "name": "Decorative_Trash_Can",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/95/Decorative_Trash_Can.png"
         },
         {
           "name": "Globe",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e4/Globe.png"
         },
         {
           "name": "Industrial_Pipe",
-          "width": "1",
-          "height": "3",
+          "width": 1,
+          "height": 3,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/0/09/Industrial_Pipe.png"
         },
         {
           "name": "Model_Ship",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d9/Model_Ship.png"
         },
         {
           "name": "Small_Crystal",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3f/Small_Crystal.png"
         },
         {
           "name": "Totem_Pole",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/21/Totem_Pole.png"
         },
         {
           "name": "Basic_Log",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/77/Basic_Log.png"
         },
         {
           "name": "Big_Green_Cane",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/53/Big_Green_Cane.png"
         },
         {
           "name": "Big_Red_Cane",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/3a/Big_Red_Cane.png"
         },
         {
           "name": "Drum_Block",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/dc/Drum_Block.png"
         },
         {
           "name": "Flute_Block",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/3/31/Flute_Block.png"
         },
         {
           "name": "Grave_Stone",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/fe/Grave_Stone.png"
         },
         {
           "name": "Green_Canes",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/41/Green_Canes.png"
         },
         {
           "name": "Red_Canes",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Red_Canes.png"
         },
         {
           "name": "Mixed_Canes",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/52/Mixed_Cane.png"
         },
         {
           "name": "Junimo_Kart_Arcade_System",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Junimo_Kart_Arcade_System.png"
         },
         {
           "name": "Lawn_Flamingo",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/c/c1/Lawn_Flamingo.png"
         },
         {
           "name": "Log_Section",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/7/78/Log_Section.png"
         },
         {
           "name": "Ornamental_Hay_Bale",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/99/Ornamental_Hay_Bale.png"
         },
         {
           "name": "Plush_Bunny",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/da/Plush_Bunny.png"
         },
         {
           "name": "Prairie_King_Arcade_System",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/eb/Prairie_King_Arcade_System.png"
         },
         {
           "name": "Seasonal_Plant_3_Spring",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d4/Seasonal_Plant_3_Spring.png"
         },
         {
           "name": "Seasonal_Decor_Spring",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/6/60/Seasonal_Decor_Spring.png"
         },
         {
           "name": "Soda_Machine",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/22/Soda_Machine.png"
         },
         {
           "name": "Stone_Cairn",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/d/d6/Stone_Cairn.png"
         },
         {
           "name": "Stardew_Hero_Trophy",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/b/be/Stardew_Hero_Trophy.png"
         }
       ]
@@ -2706,80 +2706,80 @@
       "flooring": [
         {
           "name": "Wood_Path",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/e/e3/Wood_Path.png"
         },
         {
           "name": "Stepping_Stone_Path",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Stepping_Stone_Path.png"
         },
         {
           "name": "Gravel_Path",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/1/15/Gravel_Path.png"
         },
         {
           "name": "Cobblestone_Path",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/90/Cobblestone_Path.png"
         },
         {
           "name": "Crystal_Path",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9b/Crystal_Path.png"
         },
         {
           "name": "Wood_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/58/Wood_Floor.png"
         },
         {
           "name": "Weathered_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/2a/Weathered_Floor.png"
         },
         {
           "name": "Straw_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/8/85/Straw_Floor.png"
         },
         {
           "name": "Stone_Walkway_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/5/51/Stone_Walkway_Floor.png"
         },
         {
           "name": "Stone_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Stone_Floor.png"
         },
         {
           "name": "Rustic_Plank_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/9/9e/Rustic_Plank_Floor.png"
         },
         {
           "name": "Crystal_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/a/a4/Crystal_Floor.png"
         },
         {
           "name": "Brick_Floor",
-          "width": "1",
-          "height": "1",
+          "width": 1,
+          "height": 1,
           "imageSource": "https://stardewvalleywiki.com/mediawiki/images/2/29/Brick_Floor.png"
         }
       ]
