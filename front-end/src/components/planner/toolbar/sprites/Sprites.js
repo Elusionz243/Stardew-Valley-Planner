@@ -12,7 +12,7 @@ const Sprites = ({
   return (
     <div className="sprites-container">
       {Object.keys(spriteList).map((category, catIndex) => (
-        <ul className="sprite-list" key={catIndex}>
+        <ul className="sprite-list" key={catIndex} id={category}>
           <h5 className="sprite-category text-decoration-underline">
             {upperCaseFirstLetter(category)}
           </h5>
@@ -26,6 +26,11 @@ const Sprites = ({
                 }
                 className="list-item"
                 key={index}
+                hidden={
+                  toolbarState === "buildings" && name === "Greenhouse"
+                    ? true
+                    : false
+                }
               >
                 <div
                   className="sprite-list-item"
@@ -42,6 +47,7 @@ const Sprites = ({
                 >
                   <img
                     src={imageSource}
+                    name={name}
                     tile-width={width}
                     tile-height={height}
                     className="toolbar-sprite"

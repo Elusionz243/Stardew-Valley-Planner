@@ -9,6 +9,7 @@ ul {
 .toolbar-container {
   max-width: fit-content;
   scroll-behavior: smooth;
+  cursor: url("../utils/svgs/cursor-fill.svg"), auto;
 }
 
 .toolbar {
@@ -80,16 +81,21 @@ ul {
 
 .sprite-list-item {
   margin: 0.25em;
-  cursor: pointer;
 }
 
 .toolbar-sprite {
   width: inherit;
 }
 
+.select {
+  background-color: rgb(95, 48, 21);
+  outline: 3px solid rgb(214, 160, 61);
+  border-radius: 5%;
+}
+
 .list-item {
-  width: fit-content;
-  margin: 3px;
+  /* width: fit-content; */
+  /* margin: 3px; */
 }
 
 .extras {

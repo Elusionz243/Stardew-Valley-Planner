@@ -1,196 +1,670 @@
-import { useEffect, useState } from "react";
-import { changeTilePlacement } from "../utils/utils";
+import { useEffect, useState, useCallback } from "react";
+import {
+  changeTilePlacementToTrue,
+  changeTilePlacementToFalse,
+  changeTileBackground,
+  validateTiles,
+  removeTileBackground,
+  unplaceableTiles,
+  placeSprite,
+  removeSprite,
+} from "../utils/utils";
 import "./Tiles.css";
 
-const Tiles = ({ columns, rows, setTileX, setTileY, selectedSprite }) => {
+const Tiles = ({
+  columns,
+  rows,
+  setTileX,
+  setTileY,
+  selectedSprite,
+  setSelectedSprite,
+  placedSprites,
+  selectedPlacedSprite,
+  setSelectedPlacedSprite,
+  activeTool,
+  toolbarState,
+}) => {
   const [tiles, setTiles] = useState(
     new Array(rows).fill(0).map((row) => new Array(columns).fill(0))
   );
-  useEffect(() => {
-    const onWindowLoad = () => {
-      const greenhouse = document
-        .getElementById("Greenhouse")
-        .firstChild.cloneNode(true);
 
-      greenhouse.classList.remove("sprite-list-item");
-      greenhouse.classList.add("placed-sprite");
-      const greenhouseX = 26;
-      const greenhouseY = 10;
-      const greenhouseWidth = parseInt(greenhouse.getAttribute("tile-width"));
-      const greenhouseHeight = parseInt(greenhouse.getAttribute("tile-height"));
+  const [drawing, setDrawing] = useState(false);
 
-      greenhouse.style.width = `${greenhouseWidth}em`;
-      const greenhouseTile = document.getElementById(
-        `tile${greenhouseX}-${greenhouseHeight}`
-      );
-      greenhouseTile.appendChild(greenhouse);
-      changeTilePlacement(
-        greenhouseX,
-        greenhouseY,
-        greenhouseWidth,
-        greenhouseHeight
-      );
-
-      const shippingBox = document
-        .getElementById("Shipping_Box")
-        .firstChild.cloneNode(true);
-      shippingBox.classList.remove("sprite-list-item");
-      shippingBox.classList.add("placed-sprite");
-      const shippingBoxX = 71;
-      const shippingBoxY = 14;
-      const shippingBoxWidth = parseInt(shippingBox.getAttribute("tile-width"));
-      const shippingBoxHeight = parseInt(
-        shippingBox.getAttribute("tile-height")
-      );
-      shippingBox.style.bottom = `${
-        parseInt(shippingBox.getAttribute("tile-height")) - 1
-      }em`;
-      const shippingBoxTile = document.getElementById(
-        `tile${shippingBoxX}-${shippingBoxY}`
-      );
-      shippingBox.style.width = `${shippingBoxWidth}em`;
-      shippingBoxTile.appendChild(shippingBox);
-      changeTilePlacement(
-        shippingBoxX,
-        shippingBoxY,
-        shippingBoxWidth,
-        shippingBoxHeight
-      );
-    };
-    onWindowLoad();
-    return;
-  }, []);
-
-  const handleMouseClick = ({ target }) => {
+  const handleMouseClick = (e) => {
     try {
-      let x = target.getAttribute("x");
-      let y = target.getAttribute("y");
+      let x = parseInt(e.target.getAttribute("x"));
+      let y = parseInt(e.target.getAttribute("y"));
+      let id, width, height, sprite;
+      let el = document.getElementById(`tile${x}-${y}`);
 
-      // Verify all tiles have a truthy placeable value.
-      for (let i = 0; i < selectedSprite.height; i++) {
-        for (let n = 0; n < selectedSprite.width; n++) {
-          let element = document.getElementById(
-            `tile${parseInt(x) + n}-${parseInt(y) + i}`
-          );
-          if (element.getAttribute("placeable") === "false") return;
+      if (!placedSprites.current[e.target.id]) {
+        if (activeTool === "cursor") {
+          if (selectedPlacedSprite.id.length) {
+            id = selectedPlacedSprite.id;
+            width = selectedPlacedSprite.width;
+            height = selectedPlacedSprite.height;
+            sprite = selectedPlacedSprite.element;
+          }
+
+          if (selectedSprite.id.length) {
+            id = selectedSprite.id;
+            width = selectedSprite.width;
+            height = selectedSprite.height;
+            sprite = selectedSprite.element.cloneNode(true);
+          }
+
+          //verify all tiles placement is truthy
+          if (validateTiles(x, y, width, height) === false) return;
+
+          // Remove sprite from spriteRefs{} and update the (x,y) position
+          if (selectedPlacedSprite.id.length) {
+            delete placedSprites.current[
+              `${id.replace(/\W\d\d/g, "")}-${selectedPlacedSprite.x}-${
+                selectedPlacedSprite.y
+              }`
+            ];
+            setSelectedPlacedSprite({
+              ...selectedPlacedSprite,
+              x: x,
+              y: y,
+            });
+          }
+
+          // Add styling to sprites selected from Toolbar
+          if (!selectedPlacedSprite.id.length) {
+            sprite.style.width = `${width}em`;
+            sprite.style.bottom = `-${height - 1}em`;
+          }
+
+          // Remove the sprite from the planner
+          if (selectedPlacedSprite.id.length) {
+            removeSprite(
+              selectedPlacedSprite.x,
+              selectedPlacedSprite.y,
+              width,
+              height
+            );
+          }
+          // More Info in {../utils/utils.js}
+          changeTilePlacementToFalse(x, y, width, height);
+
+          let spriteContainer = placeSprite(id, x, y, width, height);
+
+          el.appendChild(sprite);
+          el.appendChild(spriteContainer);
+
+          removeTileBackground(x, y, width, height);
+
+          placedSprites.current = {
+            ...placedSprites.current,
+            [spriteContainer.id]: spriteContainer,
+          };
+
+          setSelectedPlacedSprite({
+            ...selectedPlacedSprite,
+            id: "",
+            element: <></>,
+            width: 0,
+            height: 0,
+            x: 0,
+            y: 0,
+          });
+        }
+
+        if (activeTool === "bucket") {
+          if (selectedSprite.id.length) {
+            id = selectedSprite.id;
+            width = selectedSprite.width;
+            height = selectedSprite.height;
+            sprite = selectedSprite.element.cloneNode(true);
+          }
+
+          let top = 0;
+          let right = 0;
+          let bottom = 0;
+          let left = 0;
+
+          if (
+            document
+              .getElementById(`tile${x}-${y}`)
+              .getAttribute("placeable") === "false"
+          )
+            return;
+
+          for (let i = 0; i < y; i++) {
+            const element = document.getElementById(`tile${x}-${y - i}`);
+            if (element.getAttribute("placeable") === "false") {
+              break;
+            }
+            top = i;
+          }
+
+          for (let i = 0; i < columns; i++) {
+            const element = document.getElementById(`tile${x + i}-${y}`);
+            if (element.getAttribute("placeable") === "false") {
+              break;
+            }
+            right = i + 1;
+          }
+          for (let i = 0; i < rows; i++) {
+            const element = document.getElementById(`tile${x}-${y + i}`);
+            if (element.getAttribute("placeable") === "false") {
+              break;
+            }
+            bottom = i + 1;
+          }
+          for (let i = 0; i < x; i++) {
+            const element = document.getElementById(`tile${x - i}-${y}`);
+            if (element.getAttribute("placeable") === "false") {
+              break;
+            }
+            left = i;
+          }
+          for (let i = 0; i < top + bottom; i++) {
+            for (let n = 0; n < right + left; n++) {
+              const tile = document.getElementById(
+                `tile${x - left + n}-${y - top + i}`
+              );
+
+              if (tile.getAttribute("placeable") === "true") {
+                if (selectedSprite.id.length) {
+                  sprite = selectedSprite.element.cloneNode(true);
+                  id = selectedSprite.id;
+                  width = selectedSprite.width;
+                  height = selectedSprite.height;
+
+                  sprite.style.width = `${width}em`;
+                  sprite.style.bottom = `-${height - 1}em`;
+
+                  let spriteContainer = placeSprite(id, x, y, width, height);
+
+                  tile.appendChild(sprite);
+                  tile.appendChild(spriteContainer);
+
+                  placedSprites.current = {
+                    ...placedSprites.current,
+                    [spriteContainer.id]: spriteContainer,
+                  };
+
+                  changeTilePlacementToFalse(x, y, width, height);
+                }
+              }
+            }
+          }
         }
       }
-      // change all tiles "placeable" value from thuthy to falsy.
-      for (let i = 0; i < selectedSprite.height; i++) {
-        for (let n = 0; n < selectedSprite.width; n++) {
-          let element = document.getElementById(
-            `tile${parseInt(x) + n}-${parseInt(y) + i}`
-          );
-          if (element.getAttribute("placeable") === "true")
-            element.setAttribute("placeable", "false");
+      if (placedSprites.current[e.target.id]) {
+        let sprite = placedSprites.current[e.target.id];
+        const x = parseInt(sprite.getAttribute("x"));
+        const y = parseInt(sprite.getAttribute("y"));
+        const width = parseInt(sprite.style.width);
+        const height = parseInt(sprite.style.height);
+        const id = sprite.id;
+
+        if (activeTool === "cursor") {
+          const spriteElement = sprite.parentElement.firstChild.cloneNode(true);
+
+          if (document.querySelector(".toolbar-sprite.select"))
+            document
+              .querySelector(".toolbar-sprite.select")
+              .classList.remove("select");
+
+          changeTilePlacementToTrue(x, y, width, height);
+          setSelectedSprite({
+            ...selectedSprite,
+            id: "",
+            element: <></>,
+            x: 0,
+            y: 0,
+          });
+          setSelectedPlacedSprite({
+            ...selectedPlacedSprite,
+            element: spriteElement,
+            id: id,
+            x: x,
+            y: y,
+            width: width,
+            height: height,
+          });
+        }
+        if (activeTool === "eraser") {
+          if (e.target.id.replace(/\W\d\d/g, "") === "Greenhouse") return;
+
+          removeSprite(x, y, width, height);
+          delete placedSprites.current[id];
         }
       }
-
-      let element = document.getElementById(
-        `tile${parseInt(x)}-${parseInt(y)}`
-      );
-
-      selectedSprite.element.style.width = `${selectedSprite.width}em`;
-      selectedSprite.element.style.bottom = `-${selectedSprite.height - 1}em`;
-      const sprite = selectedSprite.element.cloneNode(true);
-      element.appendChild(sprite);
-
-      const spriteContainer = document.createElement("div");
-      spriteContainer.style.width = `${selectedSprite.width}em`;
-      spriteContainer.style.height = `${selectedSprite.height}em`;
-      element.appendChild(spriteContainer);
     } catch (error) {
-      return null;
+      return error;
+    }
+  };
+
+  const handleRightClick = (e) => {
+    try {
+      e.preventDefault();
+      let x = parseInt(e.target.getAttribute("x"));
+      let y = parseInt(e.target.getAttribute("y"));
+
+      if (selectedPlacedSprite.id.length) {
+        removeTileBackground(
+          x,
+          y,
+          selectedPlacedSprite.width,
+          selectedPlacedSprite.height
+        );
+        setSelectedPlacedSprite({
+          id: "",
+          element: <></>,
+          x: 0,
+          y: 0,
+          width: 0,
+          height: 0,
+        });
+      }
+      if (selectedSprite.id.length) {
+        removeTileBackground(x, y, selectedSprite.width, selectedSprite.height);
+        setSelectedSprite({
+          id: "",
+          element: <></>,
+          width: 0,
+          height: 0,
+        });
+      }
+    } catch (error) {
+      return error;
+    }
+  };
+
+  const handleMouseUpDown = (e) => {
+    try {
+      e.preventDefault();
+      const x = parseInt(e.target.getAttribute("x"));
+      const y = parseInt(e.target.getAttribute("y"));
+
+      if (activeTool === "pencil" || activeTool === "eraser") {
+        if (e.type === "mousedown") {
+          setDrawing(true);
+          if (activeTool === "eraser") {
+            const sprite = placedSprites.current[e.target.id];
+            const id = sprite.id;
+            const width = parseInt(sprite.style.width);
+            const height = parseInt(sprite.style.height);
+
+            if (e.target.id.replace(/\W\d\d/g, "") === "Greenhouse") {
+              return;
+            }
+
+            setSelectedPlacedSprite({
+              ...selectedPlacedSprite,
+              id: id,
+              element: sprite,
+              width: width,
+              height: height,
+              x: x,
+              y: y,
+            });
+            setSelectedSprite({
+              ...selectedSprite,
+              id: "",
+              element: <></>,
+              width: 0,
+              height: 0,
+            });
+            if (document.querySelector(".toolbar-sprite.select")) {
+              const selected = document.querySelector(".toolbar-sprite.select");
+              selected.classList.remove("select");
+            }
+          }
+          if (!placedSprites.current[e.target.id]) {
+            const element = document.getElementById(`tile${x}-${y}`);
+            if (element.getAttribute("placeable") === "true") {
+              const id = selectedSprite.id;
+              const width = selectedSprite.width;
+              const height = selectedSprite.height;
+              const sprite = selectedSprite.element.cloneNode(true);
+
+              sprite.style.width = `${width}em`;
+              sprite.style.bottom = `-${height - 1}em`;
+
+              let spriteContainer = placeSprite(id, x, y, width, height);
+
+              changeTilePlacementToFalse(x, y, width, height);
+
+              element.appendChild(sprite);
+              element.appendChild(spriteContainer);
+
+              console.log(element);
+              placedSprites.current = {
+                ...placedSprites.current,
+                [spriteContainer.id]: spriteContainer,
+              };
+            }
+          }
+        } else if (e.type === "mouseup") {
+          setDrawing(false);
+        }
+      }
+    } catch (error) {
+      return error;
     }
   };
 
   const handleMouseEnter = ({ target }) => {
     try {
-      let x = target.getAttribute("x");
-      let y = target.getAttribute("y");
+      let x = parseInt(target.getAttribute("x"));
+      let y = parseInt(target.getAttribute("y"));
 
       // (X, Y) coords
       setTileX((prev) => (prev === x ? prev : x));
       setTileY((prev) => (prev === y ? prev : y));
 
-      if (selectedSprite.id.length) {
-        for (let i = 0; i < selectedSprite.height; i++) {
-          for (let n = 0; n < selectedSprite.width; n++) {
-            let element = document.getElementById(
-              `tile${parseInt(x) + n}-${parseInt(y) + i}`
+      if (activeTool === "cursor") {
+        target.style.background = "rgba(255,255,255,0.3)";
+        if (selectedPlacedSprite.id.length || selectedSprite.id.length) {
+          const width = selectedPlacedSprite.width || selectedSprite.width;
+          const height = selectedPlacedSprite.height || selectedSprite.height;
+          changeTileBackground(x, y, width, height);
+          return;
+        }
+      }
+      if (activeTool === "bucket") {
+        let top = 0;
+        let right = 0;
+        let bottom = 0;
+        let left = 0;
+
+        if (
+          document.getElementById(`tile${x}-${y}`).getAttribute("placeable") ===
+          "false"
+        )
+          return;
+
+        for (let i = 0; i < y; i++) {
+          const element = document.getElementById(`tile${x}-${y - i}`);
+          if (element.getAttribute("placeable") === "false") {
+            break;
+          }
+          top = i;
+        }
+
+        for (let i = 0; i < columns; i++) {
+          const element = document.getElementById(`tile${x + i}-${y}`);
+          if (element.getAttribute("placeable") === "false") {
+            break;
+          }
+          right = i + 1;
+        }
+
+        for (let i = 0; i < rows; i++) {
+          const element = document.getElementById(`tile${x}-${y + i}`);
+          if (element.getAttribute("placeable") === "false") {
+            break;
+          }
+          bottom = i + 1;
+        }
+
+        for (let i = 0; i < x; i++) {
+          const element = document.getElementById(`tile${x - i}-${y}`);
+          if (element.getAttribute("placeable") === "false") {
+            break;
+          }
+          left = i;
+        }
+
+        for (let i = 0; i < top + bottom; i++) {
+          for (let n = 0; n < right + left; n++) {
+            const element = document.getElementById(
+              `tile${x - left + n}-${y - top + i}`
             );
-            element.getAttribute("placeable") === "true"
-              ? (element.style.background = "rgba(0,255,0,0.3)")
-              : (element.style.background = "rgba(255,0,0,0.3)");
+            if (element.getAttribute("placeable") === "true") {
+              element.style.background = "rgba(255, 255, 255, 0.3)";
+            }
           }
         }
-        return;
+        target.style.background = "rgba(255,255,255,0.3)";
       }
-      target.style.background = "rgba(255,255,255,0.3)";
+      if (activeTool === "pencil" || activeTool === "eraser") {
+        let id, width, height, sprite;
+        if (activeTool === "pencil")
+          target.style.background = "rgba(255,255,255,0.3)";
+
+        if (drawing) {
+          if (activeTool === "pencil") {
+            if (selectedSprite.id.length) {
+              id = selectedSprite.id;
+              width = selectedSprite.width;
+              height = selectedSprite.height;
+              sprite = selectedSprite.element.cloneNode(true);
+              changeTileBackground(x, y, width, height);
+            }
+            const tile = document.getElementById(`tile${x}-${y}`);
+            if (validateTiles(x, y, width, height) === false) return;
+
+            if (tile.getAttribute("placeable") === "true") {
+              sprite.style.width = `${width}em`;
+              sprite.style.bottom = `-${height - 1}em`;
+
+              let spriteContainer = placeSprite(id, x, y, width, height);
+
+              tile.appendChild(sprite);
+              tile.appendChild(spriteContainer);
+
+              changeTilePlacementToFalse(x, y, width, height);
+              changeTileBackground(x, y, width, height);
+
+              placedSprites.current = {
+                ...placedSprites.current,
+                [spriteContainer.id]: spriteContainer,
+              };
+            }
+            target.style.background = "rgba(255,255,255,0.3)";
+          }
+          if (activeTool === "eraser") {
+            if (selectedPlacedSprite.id.length) {
+              const id = `${selectedPlacedSprite.id.replace(
+                /\W\d\d/g,
+                ""
+              )}-${x}-${y}`;
+              const width = selectedPlacedSprite.width;
+              const height = selectedPlacedSprite.height;
+
+              removeSprite(x, y, width, height);
+              delete placedSprites.current[id];
+            }
+          }
+        }
+      }
     } catch (error) {
-      return null;
+      return error;
     }
   };
 
   const handleMouseLeave = ({ target }) => {
     try {
-      const x = target.getAttribute("x");
-      const y = target.getAttribute("y");
-      if (selectedSprite.id.length) {
-        for (let i = 0; i < selectedSprite.height; i++) {
-          for (let n = 0; n < selectedSprite.width; n++) {
-            document.getElementById(
-              `tile${parseInt(x) + n}-${parseInt(y) + i}`
-            ).style.background = "none";
+      const x = parseInt(target.getAttribute("x"));
+      const y = parseInt(target.getAttribute("y"));
+      if (activeTool === "cursor") {
+        if (selectedPlacedSprite.id.length || selectedSprite.id.length) {
+          const width = selectedPlacedSprite.width || selectedSprite.width;
+          const height = selectedPlacedSprite.height || selectedSprite.height;
+          removeTileBackground(x, y, width, height);
+          return;
+        }
+        target.style.background = "none";
+      }
+      if (activeTool === "bucket") {
+        let top = 0;
+        let right = 0;
+        let bottom = 0;
+        let left = 0;
+
+        if (
+          document.getElementById(`tile${x}-${y}`).getAttribute("placeable") ===
+          "false"
+        )
+          return;
+
+        // TOP
+        for (let i = 0; i < y; i++) {
+          const element = document.getElementById(`tile${x}-${y - i}`);
+          if (
+            element.getAttribute("placeable") === "false" ||
+            element.getAttribute("y") === 0
+          ) {
+            break;
+          }
+          top = i;
+        }
+
+        // RIGHT
+        for (let i = 0; i < columns; i++) {
+          const element = document.getElementById(`tile${x + i}-${y}`);
+          if (element.getAttribute("placeable") === "false") {
+            break;
+          }
+          right = i + 1;
+        }
+
+        // BOTTOM
+        for (let i = 0; i < rows; i++) {
+          const element = document.getElementById(`tile${x}-${y + i}`);
+          if (element.getAttribute("placeable") === "false") {
+            break;
+          }
+          bottom = i + 1;
+        }
+
+        // LEFT
+        for (let i = 0; i < x; i++) {
+          const element = document.getElementById(`tile${x - i}-${y}`);
+          if (element.getAttribute("placeable") === "false") {
+            break;
+          }
+          left = i;
+        }
+
+        // Calculate correct tiles
+        for (let i = 0; i < top + bottom; i++) {
+          for (let n = 0; n < right + left; n++) {
+            const element = document.getElementById(
+              `tile${x - left + n}-${y - top + i}`
+            );
+            if (element.getAttribute("placeable") === "true") {
+              element.style.background = "none";
+            }
           }
         }
-        return;
       }
-      target.style.background = "none";
+      if (activeTool === "pencil") {
+        let width, height;
+        target.style.background = "none";
+
+        if (selectedSprite.id.length) {
+          width = selectedSprite.width;
+          height = selectedSprite.height;
+        }
+        removeTileBackground(x, y, width, height);
+      }
+      if (activeTool === "eraser") {
+        target.style.background = "none";
+      }
     } catch (error) {
-      return null;
+      return error;
     }
   };
 
-  const unplaceableTiles = (x, y) => {
-    x = parseInt(x);
-    y = parseInt(y);
+  useEffect(() => {
+    const onWindowLoad = () => {
+      let unplaceableTiles = document.querySelectorAll('[placeable="false"]');
+
+      unplaceableTiles.forEach((tile) => (tile.style.outline = "none"));
+
+      // Greenhouse
+      let sprite = document
+        .getElementById("Greenhouse")
+        .firstChild.cloneNode(true);
+
+      sprite.classList.remove("sprite-list-item");
+      sprite.classList.add("placed-sprite");
+      sprite.addEventListener("mouseenter", (e) =>
+        handleMouseEnter(e, activeTool)
+      );
+
+      let x = 26;
+      let y = 10;
+      let width = parseInt(sprite.getAttribute("tile-width"));
+      let height = parseInt(sprite.getAttribute("tile-height"));
+
+      sprite.style.width = `${width}em`;
+      sprite.style.bottom = `-${height - 1}em`;
+
+      const greenhouseTile = document.getElementById(`tile${x}-${y}`);
+
+      const spriteContainer1 = document.createElement("div");
+
+      spriteContainer1.style.width = `${width}em`;
+      spriteContainer1.style.height = `${height}em`;
+
+      spriteContainer1.setAttribute("id", `Greenhouse-${x}-${y}`);
+      spriteContainer1.setAttribute("x", x);
+      spriteContainer1.setAttribute("y", y);
+
+      spriteContainer1.classList.add("placed-sprite-container");
+
+      placedSprites.current = {
+        ...placedSprites.current,
+        [spriteContainer1.id]: spriteContainer1,
+      };
+
+      greenhouseTile.appendChild(sprite);
+      greenhouseTile.appendChild(spriteContainer1);
+      changeTilePlacementToFalse(x, y, width, height);
+
+      // Shipping Box
+      sprite = document
+        .getElementById("Shipping_Box")
+        .firstChild.cloneNode(true);
+
+      sprite.classList.remove("sprite-list-item");
+      sprite.classList.add("placed-sprite");
+
+      x = 71;
+      y = 14;
+      width = parseInt(sprite.getAttribute("tile-width"));
+      height = parseInt(sprite.getAttribute("tile-height"));
+
+      sprite.style.width = `${width}em`;
+      sprite.style.bottom = `${height - 1}em`;
+
+      const spriteContainer2 = document.createElement("div");
+
+      spriteContainer2.setAttribute("id", `Shipping_Box-${x}-${y}`);
+      spriteContainer2.setAttribute("x", x);
+      spriteContainer2.setAttribute("y", y);
+
+      spriteContainer2.classList.add("placed-sprite-container");
+
+      spriteContainer2.style.width = `${width}em`;
+      spriteContainer2.style.height = `${height}em`;
+
+      placedSprites.current = {
+        ...placedSprites.current,
+        [spriteContainer2.id]: spriteContainer2,
+      };
+
+      const shippingBoxTile = document.getElementById(`tile${x}-${y}`);
+      shippingBoxTile.appendChild(sprite);
+      shippingBoxTile.appendChild(spriteContainer2);
+      changeTilePlacementToFalse(x, y, width, height);
+    };
     if (
-      (y <= 6 && x >= 46 && x <= 52) ||
-      (y <= 7 && x <= 39) ||
-      (y <= 7 && x >= 42 && x <= 45) ||
-      (y === 7 && x === 48) ||
-      (y <= 8 && x >= 53 && x <= 54) ||
-      (y <= 8 && x >= 7 && x <= 9) ||
-      (y === 8 && x === 3) ||
-      (y <= 9 && x >= 55) ||
-      (y >= 11 && y <= 16 && x >= 59 && x <= 67) ||
-      (y <= 14 && x >= 78) ||
-      (y >= 18 && x >= 77) ||
-      (y >= 23 && y <= 33 && x >= 3 && x <= 6) ||
-      (y >= 28 && x >= 70 && y <= 32 && x <= 74) ||
-      (y === 33 && x >= 71 && x <= 74) ||
-      (y >= 29 && y <= 32 && x === 75) ||
-      (y === 34 && x <= 5) ||
-      (y === 35 && x <= 4) ||
-      (y === 36 && x === 3) ||
-      (y >= 49 && x >= 36 && x <= 42 && y <= 57) ||
-      (y === 50 && x >= 35 && x <= 43) ||
-      (y >= 51 && x >= 34 && y <= 56 && x <= 45) ||
-      (y >= 52 && y <= 54 && x >= 33 && x <= 46) ||
-      (y === 55 && x === 46) ||
-      (y === 57 && x >= 43 && x <= 44) ||
-      (y === 58 && x >= 37 && x <= 41) ||
-      (y >= 59 && x >= 69) ||
-      (y >= 56 && x >= 73) ||
-      (y >= 62 && x <= 39) ||
-      (y >= 62 && x >= 42) ||
-      (y <= 64 && x <= 2)
-    ) {
-      return "false";
-    }
-    return "true";
-  };
+      document.getElementById(`Greenhouse-26-10`) &&
+      document.getElementById(`Shipping_Box-71-14`)
+    )
+      return;
+    onWindowLoad();
+    return;
+  }, []);
 
   return (
     <div className="tiles-container">
@@ -207,7 +681,10 @@ const Tiles = ({ columns, rows, setTileX, setTileY, selectedSprite }) => {
                 placeable={placeable}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                onMouseDown={handleMouseUpDown}
+                onMouseUp={handleMouseUpDown}
                 onClick={handleMouseClick}
+                onContextMenu={handleRightClick}
                 className="tile"
               ></div>
             );

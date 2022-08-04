@@ -18,3 +18,9 @@
   position: absolute !important;
   z-index: -1;
 }
+
+.placed-sprite-container {
+  position: absolute;
+  z-index: 2;
+  background: none;
+}

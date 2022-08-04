@@ -1,0 +1,8 @@
+.preview {
+  position: relative;
+}
+
+.sprite-preview {
+  position: absolute;
+  border: 1px solid lime;
+}
