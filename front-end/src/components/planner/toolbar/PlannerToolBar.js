@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { upperCaseFirstLetter } from "../utils/utils";
 
 import ReactTooltip from "react-tooltip";
 import Sprites from "./sprites/Sprites";
@@ -12,30 +13,73 @@ const PlannerToolBar = ({
   tileY,
   selectedSprite,
   setSelectedSprite,
-  moving,
-  setMoving,
   toolbarState,
   setToolbarState,
   buildingName,
   setBuildingName,
+  setSelectedPlacedSprite,
 }) => {
   const handleSelectedSprite = (e) => {
-    e.target.classList.remove("toolbar-sprite");
-    e.target.classList.add("placed-sprite");
+    const sprite = e.target;
+    if (selectedSprite.id.length) {
+      const activeSprite = document.querySelector(".toolbar-sprite.select");
+      activeSprite.classList.remove("select");
+      setSelectedSprite({
+        ...selectedSprite,
+        id: "",
+        element: <></>,
+        width: 0,
+        height: 0,
+      });
+    }
+    sprite.classList.remove("toolbar-sprite");
+    sprite.classList.add("placed-sprite");
+
     setSelectedSprite({
       ...selectedSprite,
-      id: e.target.parentElement.id,
-      element: e.target.cloneNode(true),
-      width: parseInt(e.target.getAttribute("tile-width")),
-      height: parseInt(e.target.getAttribute("tile-height")),
+      id: sprite.parentElement.id,
+      element: sprite.cloneNode(true),
+      width: parseInt(sprite.getAttribute("tile-width")),
+      height: parseInt(sprite.getAttribute("tile-height")),
     });
-    e.target.classList.remove("placed-sprite");
-    e.target.classList.add("toolbar-sprite");
-    setMoving(!moving);
+
+    setSelectedPlacedSprite({
+      ...setSelectedPlacedSprite,
+      element: <></>,
+      id: "",
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0,
+    });
+
+    sprite.classList.remove("placed-sprite");
+    sprite.classList.add("toolbar-sprite");
+    sprite.classList.add("select");
   };
 
-  const handleToolbar = (e) => {
-    setToolbarState(`${e.target.id}`);
+  const handleToolbar = (name) => {
+    if (selectedSprite.id.length) {
+      const element = document.querySelector(".toolbar-sprite.select");
+      element.classList.remove("select");
+      setSelectedSprite({
+        ...selectedSprite,
+        id: "",
+        element: <></>,
+        width: 0,
+        height: 0,
+      });
+      setSelectedPlacedSprite({
+        ...setSelectedPlacedSprite,
+        element: <></>,
+        id: "",
+        x: 0,
+        y: 0,
+        width: 0,
+        height: 0,
+      });
+    }
+    setToolbarState((oldName) => (oldName = name));
   };
 
   return (
@@ -45,11 +89,11 @@ const PlannerToolBar = ({
           {Object.keys(spritesJson[0]).map((category, index) => (
             <div
               key={index}
-              onClick={handleToolbar}
+              onClick={() => handleToolbar(category)}
               className="toolbar-btn"
               id={category}
             >
-              {category}
+              {upperCaseFirstLetter(category)}
             </div>
           ))}
         </div>

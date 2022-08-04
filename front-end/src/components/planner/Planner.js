@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import PlannerToolBar from "./toolbar/PlannerToolBar";
 import PreviewSelected from "./selected/PreviewSelected";
@@ -7,10 +7,18 @@ import Tools from "./toolbar/tools/Tools";
 
 import StandardFarm from "./utils/standard_farm_stardew.png";
 
+import cursorImg from "./utils/svgs/cursor-fill.svg";
+import bucketImg from "./utils/svgs/paint-bucket.svg";
+import pencilImg from "./utils/svgs/pencil-fill.svg";
+import eraserImg from "./utils/svgs/eraser-fill.svg";
+
 import "./Planner.css";
 
 const Planner = () => {
-  const plannerRef = useRef();
+  const plannerRef = useRef(<></>);
+  const optionRef = useRef({});
+  const toolRefs = useRef({});
+  const placedSprites = useRef({});
 
   const [tileX, setTileX] = useState(0);
   const [tileY, setTileY] = useState(0);
@@ -18,7 +26,6 @@ const Planner = () => {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
 
-  const [moving, setMoving] = useState(false);
   const [selectedSprite, setSelectedSprite] = useState({
     id: "",
     element: <></>,
@@ -29,33 +36,54 @@ const Planner = () => {
   const [buildingName, setBuildingName] = useState("");
   const [toolbarState, setToolbarState] = useState("buildings");
 
-  const [tools, setTools] = useState([
-    {
-      name: "cursor",
-      element: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1.25em"
-          height="1.25em"
-          fill="aqua"
-          className="bi bi-cursor-fill tool"
-          viewBox="0 0 16 16"
-          stroke="black"
-        >
-          <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
-        </svg>
-      ),
-    },
-  ]);
+  const [activeTool, setActiveTool] = useState("cursor");
+
+  const [options, setOptions] = useState({
+    Greenhouse: false,
+    Sprinklers: false,
+    Scarecrows: false,
+    BeeHive: false,
+    JunimoHut: false,
+  });
+  const [openOptions, setOpenOptions] = useState(false);
+
+  const [selectedPlacedSprite, setSelectedPlacedSprite] = useState({
+    element: <></>,
+    id: "",
+    x: 0,
+    y: 0,
+    width: 0,
+    height: 0,
+  });
+
+  const tools = {
+    cursor: cursorImg,
+    bucket: bucketImg,
+    pencil: pencilImg,
+    eraser: eraserImg,
+  };
 
   const handleMouseMove = (e) => {
-    setMouseX(e.clientX);
-    setMouseY(e.clientY);
+    setMouseX((oldX) => (oldX += e.clientX));
+    setMouseY((oldY) => (oldY += e.clientY));
   };
 
   const handleClick = (e) => {
     e.clientX += mouseX;
     e.clientY += mouseY;
+  };
+
+  const handleToolChange = (e) => {
+    let toolName = e.target.getAttribute("name");
+    setActiveTool((prev) => (prev = toolName));
+    const element = document.querySelector(".tools-card.active");
+    toolRefs.current[toolName].classList.add("active");
+    element.classList.remove("active");
+    plannerRef.current.style.cursor = `url(${tools[toolName]}), auto`;
+  };
+
+  const handleChecked = (name) => {
+    setOptions({ ...options, [name]: !options[name] });
   };
 
   return (
@@ -64,20 +92,26 @@ const Planner = () => {
         className="planner-container"
         onMouseMove={handleMouseMove}
         onClick={handleClick}
+        style={{ cursor: "none" }}
       >
         <PlannerToolBar
           tileX={tileX}
           tileY={tileY}
           selectedSprite={selectedSprite}
           setSelectedSprite={setSelectedSprite}
-          moving={moving}
-          setMoving={setMoving}
           toolbarState={toolbarState}
           setToolbarState={setToolbarState}
           buildingName={buildingName}
           setBuildingName={setBuildingName}
+          setSelectedPlacedSprite={setSelectedPlacedSprite}
+          activeTool={activeTool}
+          setActiveTool={setActiveTool}
         />
-        <div className="planner" ref={plannerRef}>
+        <div
+          className="planner"
+          ref={plannerRef}
+          style={{ cursor: `url(${cursorImg}), auto` }}
+        >
           <div className="tiles">
             <Tiles
               columns={80}
@@ -85,8 +119,12 @@ const Planner = () => {
               setTileX={setTileX}
               setTileY={setTileY}
               selectedSprite={selectedSprite}
-              moving={moving}
-              setMoving={setMoving}
+              setSelectedSprite={setSelectedSprite}
+              placedSprites={placedSprites}
+              selectedPlacedSprite={selectedPlacedSprite}
+              setSelectedPlacedSprite={setSelectedPlacedSprite}
+              activeTool={activeTool}
+              toolbarState={toolbarState}
             />
           </div>
           <img
@@ -104,7 +142,16 @@ const Planner = () => {
             <PreviewSelected selectedSprite={selectedSprite} />
           </div>
           <div className="tools-main-container">
-            <Tools tools={tools} setTools={setTools} />
+            <Tools
+              tools={tools}
+              toolRefs={toolRefs}
+              options={options}
+              openOptions={openOptions}
+              setOpenOptions={setOpenOptions}
+              optionRef={optionRef}
+              handleChecked={handleChecked}
+              handleToolChange={handleToolChange}
+            />
           </div>
         </div>
       </div>

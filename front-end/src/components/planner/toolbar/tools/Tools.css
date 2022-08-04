@@ -1,4 +1,8 @@
 .tools-container {
+  display: flex;
+}
+
+.tools-card {
   width: 2em;
   height: 2em;
   background: rgb(95, 48, 21);
@@ -7,8 +11,60 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.tool {
-  transform: scale(-1, 1);
+#pencil,
+#eraser {
+  transform: scale(1, -1);
+}
+
+.tools-card.active {
+  background: rgb(214, 160, 61);
+  border: 1px solid rgb(95, 48, 21);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Options {
+  position: relative;
+}
+
+.options-container {
+  width: 10em;
+  height: 25em;
+  background-color: rgb(95, 48, 21);
+  border: 1px solid rgb(214, 160, 61);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 3em;
+  padding: 0.25em;
+}
+
+.option-header {
+  font-size: 1.15em;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid rgb(214, 160, 61);
+}
+
+.options {
+  border-bottom: 1px solid rgba(214, 160, 61, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  font-size: 1.15em;
+  font-weight: 400;
+}
+
+.check-box {
+  width: 2em;
+  height: 2em;
+  background-repeat: no-repeat;
+  background-position: center;
 }

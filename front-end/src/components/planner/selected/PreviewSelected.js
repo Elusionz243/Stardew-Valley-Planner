@@ -16,7 +16,7 @@ const PreviewSelected = ({ selectedSprite }) => {
       oldSprite = sprite.cloneNode(true);
     }
     return;
-  }, [element]);
+  }, [selectedSprite]);
   return (
     <div className="preview">
       <div className="sprite-preview"></div>

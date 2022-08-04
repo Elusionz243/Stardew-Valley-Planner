@@ -6,12 +6,30 @@ const upperCaseFirstLetter = (string) =>
     .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
     .join(" ");
 
-const changeTilePlacement = (x, y, width, height) => {
+const changeTilePlacementToTrue = (x, y, width, height) => {
+  for (let i = 0; i < height; i++) {
+    for (let n = 0; n < width; n++) {
+      let element = document.getElementById(`tile${x + n}-${y + i}`);
+      element.setAttribute("placeable", "true");
+    }
+  }
+};
+
+const changeTilePlacementToFalse = (x, y, width, height) => {
   for (let i = 0; i < height; i++) {
     for (let n = 0; n < width; n++) {
       let element = document.getElementById(`tile${x + n}-${y + i}`);
       if (element.getAttribute("placeable") === "true")
         element.setAttribute("placeable", "false");
+    }
+  }
+};
+
+const validateTiles = (x, y, width, height) => {
+  for (let i = 0; i < height; i++) {
+    for (let n = 0; n < width; n++) {
+      const element = document.getElementById(`tile${x + n}-${y + i}`);
+      if (element.getAttribute("placeable") === "false") return false;
     }
   }
 };
@@ -76,11 +94,34 @@ const unplaceableTiles = (x, y) => {
   return "true";
 };
 
+const placeSprite = (id, x, y, width, height) => {
+  const spriteContainer = document.createElement("div");
+
+  spriteContainer.style.width = `${width}em`;
+  spriteContainer.style.height = `${height}em`;
+
+  spriteContainer.setAttribute("id", `${id.replace(/\W\d\d/g, "")}-${x}-${y}`);
+  spriteContainer.setAttribute("x", x);
+  spriteContainer.setAttribute("y", y);
+
+  spriteContainer.classList.add("placed-sprite-container");
+  return spriteContainer;
+};
+
+const removeSprite = (x, y, width, height) => {
+  changeTilePlacementToTrue(x, y, width, height);
+  document.getElementById(`tile${x}-${y}`).innerHTML = "";
+};
+
 export {
   removeHyphonAndUnderscore,
   upperCaseFirstLetter,
-  changeTilePlacement,
+  changeTilePlacementToFalse,
+  changeTilePlacementToTrue,
+  validateTiles,
   changeTileBackground,
   removeTileBackground,
   unplaceableTiles,
+  placeSprite,
+  removeSprite,
 };
