@@ -32,6 +32,7 @@ const Tiles = ({
 
   const handleMouseClick = (e) => {
     try {
+      if (e.target.id === "FarmHouse-59-12") return;
       let x = parseInt(e.target.getAttribute("x"));
       let y = parseInt(e.target.getAttribute("y"));
       let id, width, height, sprite;
@@ -278,6 +279,7 @@ const Tiles = ({
   const handleMouseUpDown = (e) => {
     try {
       e.preventDefault();
+      if (e.target.id === "FarmHouse-59-12") return;
       const x = parseInt(e.target.getAttribute("x"));
       const y = parseInt(e.target.getAttribute("y"));
 
@@ -351,6 +353,7 @@ const Tiles = ({
 
   const handleMouseEnter = ({ target }) => {
     try {
+      if (target.id === "FarmHouse-59-12") return;
       let x = parseInt(target.getAttribute("x"));
       let y = parseInt(target.getAttribute("y"));
 
@@ -481,6 +484,7 @@ const Tiles = ({
 
   const handleMouseLeave = ({ target }) => {
     try {
+      if (target.id === "FarmHouse-59-12") return;
       const x = parseInt(target.getAttribute("x"));
       const y = parseInt(target.getAttribute("y"));
       if (activeTool === "cursor") {
@@ -579,21 +583,61 @@ const Tiles = ({
 
       unplaceableTiles.forEach((tile) => (tile.style.outline = "none"));
 
+      // Farm House
+      let sprite = document.createElement("img");
+
+      sprite.classList.add("placed-sprite");
+      sprite.addEventListener("mouseenter", handleMouseEnter);
+
+      let x = 59;
+      let y = 12;
+      let width = 9;
+      let height = 5;
+
+      sprite.setAttribute(
+        "src",
+        "https://stardewvalleywiki.com/mediawiki/images/3/30/House_%28tier_1%29.png"
+      );
+      sprite.setAttribute("alt", "stardew valley farm house sprite");
+      sprite.setAttribute("tile-width", `${width}`);
+      sprite.setAttribute("tile-height", `${height}`);
+
+      sprite.style.width = `${width}em`;
+      sprite.style.bottom = `-${height - 1}em`;
+
+      const farmHouseTile = document.getElementById(`tile${x}-${y}`);
+
+      const spriteContainer = document.createElement("div");
+
+      spriteContainer.style.width = `${width}em`;
+      spriteContainer.style.height = `${height}em`;
+
+      spriteContainer.setAttribute("id", `FarmHouse-${x}-${y}`);
+      spriteContainer.setAttribute("x", x);
+      spriteContainer.setAttribute("y", y);
+
+      spriteContainer.classList.add("placed-sprite-container");
+
+      placedSprites.current = {
+        ...placedSprites.current,
+        [spriteContainer.id]: spriteContainer,
+      };
+
+      farmHouseTile.appendChild(sprite);
+      farmHouseTile.appendChild(spriteContainer);
+      changeTilePlacementToFalse(x, y, width, height);
+
       // Greenhouse
-      let sprite = document
-        .getElementById("Greenhouse")
-        .firstChild.cloneNode(true);
+      sprite = document.getElementById("Greenhouse").firstChild.cloneNode(true);
 
       sprite.classList.remove("sprite-list-item");
       sprite.classList.add("placed-sprite");
-      sprite.addEventListener("mouseenter", (e) =>
-        handleMouseEnter(e, activeTool)
-      );
+      sprite.addEventListener("mouseenter", handleMouseEnter);
 
-      let x = 26;
-      let y = 10;
-      let width = parseInt(sprite.getAttribute("tile-width"));
-      let height = parseInt(sprite.getAttribute("tile-height"));
+      x = 26;
+      y = 10;
+      width = parseInt(sprite.getAttribute("tile-width"));
+      height = parseInt(sprite.getAttribute("tile-height"));
 
       sprite.style.width = `${width}em`;
       sprite.style.bottom = `-${height - 1}em`;
